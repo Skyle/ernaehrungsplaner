@@ -57,9 +57,10 @@ header {
   box-shadow: var(--shadow);
 }
 
-header > h1 {
+header h1 {
   margin: 0;
   padding: 2rem 1rem;
+  color: var(--bg);
 }
 
 /* Tablet */
