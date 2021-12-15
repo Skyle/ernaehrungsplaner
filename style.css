@@ -1,23 +1,35 @@
 html,
 body {
   font-family: "Roboto";
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 :root {
+  --bg: rgb(252, 252, 252);
+  --text: rgb(32, 32, 32);
   --primary: blue;
-  --secondary: green;
+  --secondary: #15803d;
   --button: yellow;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
 }
 
 main {
   padding: 1rem 1rem;
 }
 
+/* Hauptgrid */
+
 .maingrid {
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .mainitem {
@@ -28,15 +40,25 @@ main {
   box-shadow: var(--shadow);
 }
 
+/* Header */
+
 header {
   text-align: center;
+  background-color: var(--secondary);
+  color: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+header > h1 {
+  margin: 0;
+  padding: 2rem 1rem;
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
   .maingrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   main {
@@ -48,7 +70,7 @@ header {
 @media screen and (min-width: 1024px) {
   .maingrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   main {
@@ -58,9 +80,19 @@ header {
 
 /* Hier macht sich jeder einen Bereich */
 
-/* trainingsplan */
+
+/* Marc trainingsplan */
 
 .header_train {
   background-color: var(--primary);
   height: 10vh;
+}
+  
+  
+/* omar */
+.pro-img {
+  text-align: center;
+}
+.pro-img img {
+  width: 10rem;
 }
