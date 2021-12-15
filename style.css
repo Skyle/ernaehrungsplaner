@@ -6,7 +6,7 @@
 
 html,
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
   transition: all 300ms;
@@ -40,7 +40,7 @@ main {
 
 .maingrid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
