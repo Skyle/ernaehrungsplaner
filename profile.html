@@ -20,25 +20,36 @@
         <h4>User-name</h4>
       </section>
       <section class="form-part">
-        <form>
+        <form
+          action="https://formspree.io/f/xdobnwpy"
+          method="post"
+          class="testing-form1"
+        >
           <fieldset action="labels">
             <legend>GESUNDHEITSDATEN</legend>
-            <label for="edit-profile">Profil Bearbeiten</label> <br /><br />
-            <label for="meine-daten">Meine Daten</label> <br /><br />
-            <label for="meine-erfolg">Meine Erfolg</label> <br /><br />
-            <label for="heutige-aufgabe">Heutige Aufgabe</label> <br /><br />
-          </fieldset>
-          <fieldset class="sonstige">
-            <legend>Sonstige</legend>
-            <label for="meine-activitaeten">Meine Activitäten</label>
+            <label for="edit-profile" class="profile-label"
+              >Profil Bearbeiten</label
+            >
             <br /><br />
-            <label for="meine-preise">Meine Preise</label> <br /><br />
-            <label for="meine-erledigung">Meine Erledigung</label> <br /><br />
+            <hr id="profile-hr" />
+            <label for="meine-daten" class="profile-label">Meine Daten</label>
+            <br /><br />
+            <hr id="profile-hr" />
+            <label for="meine-erfolg" class="profile-label">Meine Erfolg</label>
+            <br /><br />
+            <hr id="profile-hr" />
+            <label for="heutige-aufgabe" class="profile-label"
+              >Heutige Aufgabe</label
+            >
+            <br /><br />
           </fieldset>
           <fieldset class="fragen">
             <legend>Fragen</legend>
-            <label for="krankheit">Leiden Sie unter besondere Krankheit?</label>
+            <label for="krankheit" class="profile-label"
+              >Leiden Sie unter besondere Krankheit?</label
+            >
             <input
+              class="profile-input-txt"
               type="text"
               id="krankheit"
               name="krankheit"
@@ -46,21 +57,61 @@
             />
             <br />
             <br />
-            <label for="allergie"> Wogegen Haben Sie Allergie?</label>
+            <label for="allergie" class="profile-label">
+              Wogegen Haben Sie Allergie?</label
+            >
             <input
+              class="profile-input-txt"
               type="text"
               id="allergie"
               name="allergie"
               placeholder="Z.B Walnuss"
             />
             <br /><br />
-            <label for="essen">Was essen Sie nicht?</label>
+            <label for="essen" class="profile-label"
+              >Was essen Sie nicht?</label
+            >
             <input
+              class="profile-input-txt"
               type="text"
               id="essen"
               name="essen"
               placeholder="Z.B Fisch"
             />
+            <br />
+            <br />
+            <button type="submit" class="profile-button">Submit</button>
+          </fieldset>
+          <fieldset class="sonstige">
+            <legend>Sonstige</legend>
+            <label for="meine-activitaeten" class="profile-label"
+              >Meine Activitäten</label
+            >
+            <br /><br />
+            <hr id="profile-hr" />
+            <label for="meine-preise" class="profile-label">Meine Preise</label>
+            <br /><br />
+            <hr id="profile-hr" />
+            <label for="meine-erledigung" class="profile-label"
+              >Meine Erledigung</label
+            >
+            <br /><br />
+            <hr id="profile-hr" />
+            <label for="einstellung" class="profile-label">Einstellung</label>
+            <br /><br />
+            <hr id="profile-hr" />
+            <label for="newsletter" class="profile-label">
+              Möchten Sie unseren Newsletter erhalten?
+            </label>
+            <br />
+            <br />
+            <input
+              type="email"
+              id="newsletter"
+              name="newsletter"
+              placeholder="John@example.com"
+            />
+            <button type="submit" class="profile-button">Submit</button>
           </fieldset>
         </form>
       </section>

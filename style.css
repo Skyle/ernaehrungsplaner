@@ -1,12 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
+  font-size: 1.6rem;
+}
+
+.sBox {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
+  font-size: 1.6rem;
 }
 
 :root {
@@ -15,7 +26,9 @@ body {
   --primary: blue;
   --secondary: #15803d;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  font-size: 62.5%;
 }
 
 a {
@@ -31,7 +44,7 @@ main {
 
 .maingrid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
@@ -56,9 +69,10 @@ header {
   box-shadow: var(--shadow);
 }
 
-header > h1 {
+header h1 {
   margin: 0;
   padding: 2rem 1rem;
+  color: var(--bg);
 }
 
 /* Tablet */
@@ -70,6 +84,20 @@ header > h1 {
 
   main {
     padding: 1rem 2rem;
+  }
+  .pro-img {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .profile-main fieldset {
+    width: 100%;
+  }
+  .profile-main .profile-input-txt[type="text"] {
+    width: 100%;
+  }
+  .profile-main #profile-hr {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
@@ -87,21 +115,16 @@ header > h1 {
 
 /* Hier macht sich jeder einen Bereich */
 
-
-
 /* Marc trainingsplan */
 
 .header_train {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 10vh;
 }
 
-/* omar */
-.pro-img {
-  text-align: center;
-}
-.pro-img img {
-  width: 10rem;
+.train_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 
@@ -173,244 +196,146 @@ Reset und Normalize
 ::after {
   box-sizing: border-box;
 }
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
+.train_grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-body {
-  margin: 0; /* 1 */
-  font-family: system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+/* .train_grid h2 {
+  grid-area: 3/1;
+} */
+
+.days {
+  display: grid;
+  grid-template-rows: 1fr 50px 50px;
 }
 
-/*
-Grouping content
-================
-*/
-
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
-
-hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-}
-
-/*
-Text-level semantics
-====================
-*/
-
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr[title] {
-  text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
-    monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Tabular data
-============
-*/
-
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-
-table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-}
-
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-
-::-moz-focus-inner {
-  border-style: none;
+.time {
+  width: 100%;
+  margin: 0;
   padding: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-/**
-Restore the focus styles unset by the previous rule.
-*/
-
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
+.time {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
 }
 
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
+.timeslot {
+  display: grid;
+  grid-template-rows: repeat(24, 1fr);
+}
+.colored {
+  display: inline-block;
+  width: 20px;
+  background-color: red;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-
-legend {
-  padding: 0;
+/* omar */
+/* .pro-img {
+  text-align: center;
+} */
+.pro-img img {
+  width: 10rem;
+}
+.pro-img h4 {
+  text-align: center;
+}
+#profile-hr {
+  border: 1px solid lightgray;
+  width: 80%;
+}
+fieldset {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border-color: var(--text);
 }
 
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
+.profile-input-txt[type="text"] {
+  width: 90%;
+  margin-top: 0.5rem;
+  border-color: var(--text);
+}
+.profile-label {
+  cursor: pointer;
+}
+.profile-button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
+/********************************************************/
+/******************Mehmet********************************/
+/********************************************************/
 
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
+#container {
+  display: grid;
+  height: 100vh;
+  /* grid-template-columns: 1; */
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "ernährung"
+    "wrapperSport";
+}
+.ernährung {
+  grid-area: ernährung;
 }
 
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+.wrapperSport {
+  width: 100vw;
+  grid-area: wrapperSport;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "obenBox"
+    "untenBox";
 }
 
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
+.obenBox {
+  width: 100vw;
+  grid-area: obenBox;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". fussball rad ."
+    ". kraft joggen .";
 }
 
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+.fussball {
+  grid-area: fussball;
 }
 
-/*
-Interactive
-===========
-*/
+.rad {
+  grid-area: rad;
+}
 
-/*
-Add the correct display in Chrome and Safari.
-*/
+.joggen {
+  grid-area: joggen;
+}
 
-summary {
-  display: list-item;
+.kraft {
+  grid-area: kraft;
+}
+
+.untenBox {
+  grid-area: untenBox;
+}
+
+.sBox {
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.sBox:hover {
+  background-color: rgba(73, 66, 66, 0.726);
+  color: var(--text);
 }
