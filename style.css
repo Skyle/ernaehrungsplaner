@@ -1,0 +1,48 @@
+html,
+body {
+  font-family: "Roboto";
+}
+
+main {
+  padding: 1rem 1rem;
+}
+
+.maingrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.mainitem {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: rgb(240, 240, 228);
+}
+
+header {
+  text-align: center;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main {
+    padding: 1rem 4rem;
+  }
+}
