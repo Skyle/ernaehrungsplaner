@@ -9,6 +9,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
+}
+
+.sBox {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -177,4 +180,75 @@ fieldset {
 .profile-button {
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+/********************************************************/
+/******************Mehmet********************************/
+/********************************************************/
+
+#container {
+  display: grid;
+  height: 100vh;
+  /* grid-template-columns: 1; */
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "ernährung"
+    "wrapperSport";
+}
+.ernährung {
+  grid-area: ernährung;
+}
+
+.wrapperSport {
+  width: 100vw;
+  grid-area: wrapperSport;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "obenBox"
+    "untenBox";
+}
+
+.obenBox {
+  width: 100vw;
+  grid-area: obenBox;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". fussball rad ."
+    ". kraft joggen .";
+}
+
+.fussball {
+  grid-area: fussball;
+}
+
+.rad {
+  grid-area: rad;
+}
+
+.joggen {
+  grid-area: joggen;
+}
+
+.kraft {
+  grid-area: kraft;
+}
+
+.untenBox {
+  grid-area: untenBox;
+}
+
+.sBox {
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.sBox:hover {
+  background-color: rgba(73, 66, 66, 0.726);
+  color: var(--text);
 }
