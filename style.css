@@ -1,8 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   font-family: "Roboto";
   color: var(--text);
   background-color: var(--bg);
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  font-size: 1.6rem;
 }
 
 :root {
@@ -12,6 +23,7 @@ body {
   --secondary: #15803d;
   --button: yellow;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  font-size: 62.5%;
 }
 
 a {
@@ -31,6 +43,10 @@ main {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.full {
+  grid-column: 1 / -1;
+}
+
 .mainitem {
   border: 2px solid black;
   padding: 1rem;
@@ -48,9 +64,10 @@ header {
   box-shadow: var(--shadow);
 }
 
-header > h1 {
+header h1 {
   margin: 0;
   padding: 2rem 1rem;
+  color: var(--bg);
 }
 
 /* Tablet */
@@ -78,6 +95,24 @@ header > h1 {
 }
 
 /* Hier macht sich jeder einen Bereich */
+
+/* Marc trainingsplan */
+
+.header_train {
+  background-color: var(--primary);
+  height: 10vh;
+}
+
+.train_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.train_grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* omar */
 .pro-img {
