@@ -194,3 +194,6 @@ fieldset {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+.profile-main p {
+  margin-top: 1rem;
+}
