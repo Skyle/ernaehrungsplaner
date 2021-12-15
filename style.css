@@ -104,7 +104,49 @@ header > h1 {
   width: 10rem;
 }
 
-/* 
+
+/*REZEPTE-ÖMER*/
+#rezepteNavbar ul{
+  display: flex;
+  justify-content: space-around;
+}
+#rezepteNavbar li{
+  display: inline-block;
+  
+}
+#rezepteNavbar a{
+  display: block;
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+ border-radius: 10px;
+  padding: 2rem;
+  
+}
+#rezepteNavbar a:hover{
+  background-color: black;
+  color: white;
+}
+.rezeptBox{
+  display: grid;
+  grid-template-rows:1fr auto ;
+  grid-template-rows:1fr auto ;
+  grid-template-areas: 
+  "title title"
+  "rezeptImage rezeptText";
+  background-color: violet;
+  margin-bottom: 20px;
+}
+.rezeptBox h3{
+  grid-area: title;
+}
+.rezeptBox img{
+  grid-area: rezeptImage;
+}
+.rezeptBox p{
+  grid-area: rezeptText;
+}
 
 
 
@@ -120,7 +162,7 @@ header > h1 {
 
 
 
-
+/*
 
 Reset und Normalize
 
