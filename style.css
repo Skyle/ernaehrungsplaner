@@ -7,7 +7,8 @@ body {
   --primary: blue;
   --secondary: green;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 main {
@@ -56,3 +57,10 @@ header {
 }
 
 /* Hier macht sich jeder einen Bereich */
+
+/* trainingsplan */
+
+.header_train {
+  background-color: var(--primary);
+  height: 10vh;
+}
