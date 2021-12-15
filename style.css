@@ -3,6 +3,13 @@ body {
   font-family: "Roboto";
 }
 
+:root {
+  --primary: blue;
+  --secondary: green;
+  --button: yellow;
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
 main {
   padding: 1rem 1rem;
 }
@@ -17,6 +24,7 @@ main {
   padding: 1rem;
   border-radius: 4px;
   background-color: rgb(240, 240, 228);
+  box-shadow: var(--shadow);
 }
 
 header {
@@ -46,3 +54,5 @@ header {
     padding: 1rem 4rem;
   }
 }
+
+/* Hier macht sich jeder einen Bereich */
