@@ -187,69 +187,115 @@ fieldset {
 /******************Mehmet********************************/
 /********************************************************/
 
-#container {
+aside {
+  background-color: rgb(207, 197, 197);
+  border-radius: 5px;
+}
+
+#headline {
+  margin: 3rem 0;
+  text-align: center;
+}
+.box p {
+  letter-spacing: 0.09rem;
+}
+.box h3 {
+  padding-bottom: 2rem;
+}
+.box {
+  padding: 2rem 2rem;
+}
+aside h2 {
+  padding: 2rem 2rem;
+}
+
+#mainContainer {
+  margin-top: 2rem;
   display: grid;
-  height: 100vh;
-  /* grid-template-columns: 1; */
-  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "ernährung"
-    "wrapperSport";
-}
-.ernährung {
-  grid-area: ernährung;
+    "containerErnährung aside"
+    "containerErnährung aside"
+    "containerErnährung aside";
 }
 
-.wrapperSport {
-  width: 100vw;
-  grid-area: wrapperSport;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "obenBox"
-    "untenBox";
+.containerErnährung {
+  grid-area: containerErnährung;
+}
+.containerSport {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.obenBox {
-  width: 100vw;
-  grid-area: obenBox;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    ". fussball rad ."
-    ". kraft joggen .";
+aside {
+  grid-area: aside;
+}
+.sport {
+  margin: 3rem 0;
+  align-self: flex-start;
+}
+.sport h2 {
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.fussball {
-  grid-area: fussball;
+.abox {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+  text-align: center;
+  margin: 4rem 3rem;
 }
 
-.rad {
-  grid-area: rad;
-}
+.boxOben {
+  display: flex;
 
-.joggen {
-  grid-area: joggen;
-}
+  display: -webkit-flex;
+  display: -ms-flex;
 
-.kraft {
-  grid-area: kraft;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .untenBox {
   grid-area: untenBox;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .sBox {
   border: 1px solid rgb(47, 46, 46);
   border-radius: 10px;
-  padding: 5px 20px;
 }
 
 .sBox:hover {
   background-color: rgba(73, 66, 66, 0.726);
   color: var(--text);
+}
+
+.sBox h3 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.sBoxEx h3 {
+  margin-bottom: 1.4rem;
+  font-size: 2.1rem;
+}
+.sBoxEx img {
+  width: 70%;
+  height: 35%;
+  border-radius: 10px;
+}
+
+.sBoxEx p {
+  width: 70%;
+  margin: 2rem 0;
+
+  letter-spacing: 0.09rem;
 }
