@@ -1,98 +1,59 @@
-html,
-body {
-  font-family: "Roboto";
-  color: var(--text);
-  background-color: var(--bg);
-}
-
-:root {
-  --bg: rgb(252, 252, 252);
-  --text: rgb(32, 32, 32);
-  --primary: blue;
-  --secondary: #15803d;
-  --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
-    0 1px 2px -1px rgb(0 0 0 / 0.1);
-}
-
-a {
-  text-decoration: none;
-  color: var(--text);
-}
-
-main {
-  padding: 1rem 1rem;
-}
-
-/* Hauptgrid */
-
-.maingrid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.mainitem {
-  border: 2px solid black;
-  padding: 1rem;
-  border-radius: 4px;
-  background-color: rgb(240, 240, 228);
-  box-shadow: var(--shadow);
-}
-
-/* Header */
-
-header {
-  text-align: center;
-  background-color: var(--secondary);
-  color: var(--bg);
-  box-shadow: var(--shadow);
-}
-
-header > h1 {
+body{
+  font-family:  sans-serif;
+  background-color: #252529;
   margin: 0;
-  padding: 2rem 1rem;
+  color: #fff;
+  line-height: 1.6;
+  display: grid;
+  font-size: 1.4rem;
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) {
-  .maingrid {
+a{
+  text-decoration:none;
+  color:#ccc;
+}
+
+
+.section-main {
+    padding: 4rem;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.lead {
+    width: 50%;
+    margin: auto;
+}
+
+.supplements {
+    padding: 4rem;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  main {
-    padding: 1rem 2rem;
-  }
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-/* Desktop */
-@media screen and (min-width: 1024px) {
-  .maingrid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  main {
-    padding: 1rem 4rem;
-  }
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
-/* Hier macht sich jeder einen Bereich */
-
-
-/* Marc trainingsplan */
-
-.header_train {
-  background-color: var(--primary);
-  height: 10vh;
+.supplements a {
+    background-color: cadetblue;
+    padding: 0.7rem 1rem;
 }
-  
-  
-/* omar */
-.pro-img {
-  text-align: center;
+
+.card {
+    background: linear-gradient(to right bottom, rgb(96, 96, 255, 0.6), rgba(243, 66, 149, 0.664));
+    padding: 3rem;
+    /* border: 1px solid #b4eeb4; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #8a8a8a;
 }
-.pro-img img {
-  width: 10rem;
+
+footer{
+    text-align: center;
 }
