@@ -87,47 +87,6 @@ header > h1 {
 
 /* Hier macht sich jeder einen Bereich */
 
-/*REZEPTE ÖMER*/
-#rezepteMainContainer{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr auto 1fr;
-  grid-template-areas: 
-  "header"
-  "body"
-  "footer";
-}
-/* rezepte Main */
-#rezepteNavbar ul{
-  display: flex;
-  justify-content: space-around;
-}
-#rezepteNavbar li{
-  display: inline-block;
-  
-}
-#rezepteNavbar a{
-  display: block;
-  text-decoration: none;
-  background-color: gray;
-  color: white;
-  text-transform: uppercase;
- border-radius: 10px;
-  padding: 2rem;
-  
-}
-#rezepteNavbar a:hover{
-  background-color: black;
-  color: white;
-}
-
-/*rezepte footer */
-#rezepteFooter{
-  background-color: rgb(197, 41, 21);
-  grid-area: footer;
-  text-align: center;
-  color: white;
-}
 
 
 /* Marc trainingsplan */
