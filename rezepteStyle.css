@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr auto 1fr;
+    grid-template-areas: 
+    "header"
+    "body"
+    "footer";
+}
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+footer{
+    background-color: rgb(197, 41, 21);
+    grid-area: footer;
+    text-align: center;
+    color: white;
+}
+
+
