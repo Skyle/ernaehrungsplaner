@@ -80,6 +80,20 @@ header h1 {
   main {
     padding: 1rem 2rem;
   }
+  .pro-img {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .profile-main fieldset {
+    width: 100%;
+  }
+  .profile-main .profile-input-txt[type="text"] {
+    width: 100%;
+  }
+  .profile-main #profile-hr {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 /* Desktop */
@@ -124,7 +138,7 @@ header h1 {
 .pro-img h4 {
   text-align: center;
 }
-hr {
+#profile-hr {
   border: 1px solid lightgray;
   width: 80%;
 }
@@ -133,11 +147,13 @@ fieldset {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
+  border-color: var(--text);
 }
 
 .profile-input-txt[type="text"] {
   width: 90%;
   margin-top: 0.5rem;
+  border-color: var(--text);
 }
 .profile-label {
   cursor: pointer;
