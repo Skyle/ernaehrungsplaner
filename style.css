@@ -27,11 +27,16 @@ main {
   box-shadow: var(--shadow);
 }
 
+<<<<<<< HEAD
 /* Header */
 
 header {
   text-align: center;
   background-color: grey;
+=======
+header {
+  text-align: center;
+>>>>>>> 936e3a5fc8ca579dd5c17fd68a15f288933155d5
 }
 
 /* Tablet */
