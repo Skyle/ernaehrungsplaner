@@ -25,7 +25,8 @@ body {
   --primary: blue;
   --secondary: #15803d;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
 }
 
@@ -137,14 +138,14 @@ header h1 {
 
 .days {
   display: grid;
-  grid-template-rows: 1fr 50px 1fr;
+  grid-template-rows: 1fr 50px 50px;
 }
 
 .time {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 0.3rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -155,7 +156,7 @@ header h1 {
 
 .timeslot {
   display: grid;
-  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
 }
 .colored {
   display: inline-block;
