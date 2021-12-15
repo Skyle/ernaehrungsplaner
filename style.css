@@ -78,10 +78,15 @@ header > h1 {
 }
 
 /* Hier macht sich jeder einen Bereich */
+
 /* omar */
 .pro-img {
   text-align: center;
 }
 .pro-img img {
   width: 10rem;
+}
+hr {
+  border: 1px solid lightgray;
+  width: 80%;
 }

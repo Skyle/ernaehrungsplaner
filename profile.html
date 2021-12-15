@@ -18,20 +18,20 @@
         <h4>User-name</h4>
       </section>
       <section class="form-part">
-        <form>
+        <form
+          action="https://formspree.io/f/xdobnwpy"
+          method="post"
+          class="testing-form1"
+        >
           <fieldset action="labels">
             <legend>GESUNDHEITSDATEN</legend>
             <label for="edit-profile">Profil Bearbeiten</label> <br /><br />
+            <hr />
             <label for="meine-daten">Meine Daten</label> <br /><br />
+            <hr />
             <label for="meine-erfolg">Meine Erfolg</label> <br /><br />
+            <hr />
             <label for="heutige-aufgabe">Heutige Aufgabe</label> <br /><br />
-          </fieldset>
-          <fieldset class="sonstige">
-            <legend>Sonstige</legend>
-            <label for="meine-activitaeten">Meine Activitäten</label>
-            <br /><br />
-            <label for="meine-preise">Meine Preise</label> <br /><br />
-            <label for="meine-erledigung">Meine Erledigung</label> <br /><br />
           </fieldset>
           <fieldset class="fragen">
             <legend>Fragen</legend>
@@ -59,6 +59,30 @@
               name="essen"
               placeholder="Z.B Fisch"
             />
+            <br />
+            <br />
+            <button type="submit">Submit</button>
+          </fieldset>
+          <fieldset class="sonstige">
+            <legend>Sonstige</legend>
+            <label for="meine-activitaeten">Meine Activitäten</label>
+            <br /><br />
+            <hr />
+            <label for="meine-preise">Meine Preise</label> <br /><br />
+            <hr />
+            <label for="meine-erledigung">Meine Erledigung</label> <br /><br />
+            <hr />
+            <label for="einstellung">Einstellung</label>
+            <label for="newsletter">
+              Möchten Sie unseren Newsletter erhalten?
+            </label>
+            <input
+              type="email"
+              id="newsletter"
+              name="newsletter"
+              placeholder="John@example.com"
+            />
+            <button type="submit">Submit</button>
           </fieldset>
         </form>
       </section>
