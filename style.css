@@ -48,7 +48,7 @@ header {
 @media screen and (min-width: 1024px) {
   .maingrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   main {
