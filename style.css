@@ -1,7 +1,6 @@
 /* Reset und Imports */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 *,
 ::before,
 ::after {
@@ -14,7 +13,10 @@ a {
   text-decoration: none;
   color: var(--text);
 }
-
+img {
+  width: 100%;
+  object-fit: contain;
+}
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
@@ -66,6 +68,21 @@ main {
   box-shadow: var(--shadow);
 }
 
+.mainitem h2 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.mainitem .imgcontainer {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.mainItemText {
+  padding: 2rem 0rem;
+}
 /* Header */
 
 header {
