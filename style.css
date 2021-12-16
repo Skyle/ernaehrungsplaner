@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text);
+}
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
@@ -61,10 +65,13 @@ body {
   box-shadow: var(--shadow);
 }
 
-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+/* Header */
+
+header {
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--bg);
+  box-shadow: var(--shadow);
 }
 
 header h1 {
@@ -73,38 +80,32 @@ header h1 {
   color: var(--bg);
 }
 
-.card {
-  background: linear-gradient(
-    to right bottom,
-    rgb(96, 96, 255, 0.6),
-    rgba(243, 66, 149, 0.664)
-  );
-  padding: 3rem;
-  /* border: 1px solid #b4eeb4; */
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #8a8a8a;
+main {
+  padding: 1rem 1rem;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    color: blue;
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .maingrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  main {
+    padding: 1rem 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 500px) {
-  .section-main {
-    color: cyan;
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .maingrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
 
-@media (orientation: portrait) {
-  .card {
-    color: cyan;
+  main {
+    padding: 1rem 4rem;
   }
-}
-
-footer {
-  text-align: center;
 }
 
 /* Hier macht sich jeder einen Bereich */
@@ -356,4 +357,16 @@ aside {
 .supplements a {
   background-color: cadetblue;
   padding: 0.7rem 1rem;
+}
+
+.card {
+  background: linear-gradient(
+    to right bottom,
+    rgb(96, 96, 255, 0.6),
+    rgba(243, 66, 149, 0.664)
+  );
+  padding: 3rem;
+  /* border: 1px solid #b4eeb4; */
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #8a8a8a;
 }
