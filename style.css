@@ -252,10 +252,8 @@ aside {
 
 .boxOben {
   display: flex;
-
   display: -webkit-flex;
   display: -ms-flex;
-
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -275,7 +273,7 @@ aside {
 }
 
 .sBox:hover {
-  background-color: rgba(73, 66, 66, 0.726);
+  background-color: rgba(207, 197, 197);
   color: var(--text);
 }
 
@@ -291,14 +289,14 @@ aside {
 }
 .sBoxEx img {
   width: 100%;
-  height: 35%;
+
   border-radius: 10px;
 }
 
 .sBoxEx {
   margin: 0 auto;
   margin-top: 5em;
-  width: 70%;
+  width: 75%;
 }
 
 .sBoxEx p {
