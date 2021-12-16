@@ -124,6 +124,11 @@ header h1 {
   main {
     padding: 1rem 4rem;
   }
+
+  .media_grid_marc1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Hier macht sich jeder einen Bereich */
