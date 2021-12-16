@@ -532,6 +532,7 @@ fieldset {
 .supplements a {
   background-color: cadetblue;
   padding: 0.7rem 1rem;
+  margin-top: 3rem;
 }
 
 .card {
