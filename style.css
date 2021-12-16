@@ -98,6 +98,11 @@ header h1 {
     width: 90%;
     margin-left: 5%;
   }
+  /*REZEPTE-ÖMER*/
+  #rezepteNavbar ul{
+    flex-direction: column;
+   
+  }
 }
 
 /* Desktop */
@@ -157,17 +162,23 @@ header h1 {
   grid-template-areas: 
   "title title"
   "rezeptImage rezeptText";
-  background-color: violet;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgb(185, 171, 185);
   margin-bottom: 20px;
+  border-radius: 5px;
+
 }
 .rezeptBox h3{
   grid-area: title;
 }
 .rezeptBox img{
   grid-area: rezeptImage;
+  border-radius: 5px;
 }
 .rezeptBox p{
   grid-area: rezeptText;
+  line-height: 30px;
 }
 
 
