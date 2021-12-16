@@ -1,19 +1,20 @@
 /* Reset und Imports */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-*,
-::before,
-::after {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html,
+
 a {
   text-decoration: none;
   color: var(--text);
+}
+img {
+  width: 100%;
+  object-fit: contain;
 }
 hr {
   height: 0; /* 1 */
@@ -27,29 +28,13 @@ body {
   font-size: 1.6rem;
 }
 
-.sBox {
-  transition: all 300ms;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
-  font-size: 1.6rem;
-}
-
-.section-main {
-  padding: 4rem;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
 :root {
   --bg: rgb(252, 252, 252);
   --text: rgb(32, 32, 32);
   --primary: blue;
   --secondary: #15803d;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
-    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
 }
 
@@ -82,6 +67,22 @@ main {
   box-shadow: var(--shadow);
 }
 
+.mainitem h2 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.mainitem .imgcontainer {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.mainItemText {
+  padding: 2rem 0rem;
+}
+
 /* Header */
 
 header {
@@ -94,7 +95,7 @@ header {
 header h1 {
   margin: 0;
   padding: 2rem 1rem;
-  color: var(--bg);
+  color: var(--secondary);
 }
 
 /* Tablet */
@@ -132,6 +133,81 @@ header h1 {
 }
 
 /* Hier macht sich jeder einen Bereich */
+
+/*REZEPTE-ÖMER*/
+#rezepteNavbar ul{
+  display: flex;
+  justify-content: space-around;
+}
+#rezepteNavbar li{
+  display: inline-block;
+
+}
+#rezepteNavbar a{
+  display: block;
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+ border-radius: 10px;
+  padding: 2rem;
+
+}
+#rezepteNavbar a:hover{
+  background-color: black;
+  color: white;
+}
+.rezeptBox{
+  display: grid;
+  grid-template-rows:1fr auto ;
+  grid-template-rows:1fr auto ;
+  grid-template-areas: 
+  "title title"
+  "rezeptImage rezeptText";
+  gap: 20px;
+  padding: 15px;
+  background-color: rgb(185, 171, 185);
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+}
+.rezeptBox h3{
+  grid-area: title;
+}
+.rezeptBox img{
+  grid-area: rezeptImage;
+  border-radius: 5px;
+}
+.rezeptBox p{
+  grid-area: rezeptText;
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Reset und Normalize
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
 
 /* Marc trainingsplan */
 
@@ -325,6 +401,17 @@ fieldset {
   flex-wrap: wrap;
 }
 
+sBox,
+.mainitem {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  font-size: 1.6rem;
+}
+
+
+
 .untenBox {
   grid-area: untenBox;
   display: grid;
@@ -338,7 +425,8 @@ fieldset {
   border-radius: 10px;
 }
 
-.sBox:hover {
+.sBox,
+.mainitem:hover  {
   background-color: rgba(207, 197, 197);
   color: var(--text);
 }
@@ -402,4 +490,13 @@ fieldset {
   /* border: 1px solid #b4eeb4; */
   border-radius: 5px;
   box-shadow: 1px 1px 5px #8a8a8a;
+}
+
+/* Müll */
+
+.section-main {
+  padding: 4rem;
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
