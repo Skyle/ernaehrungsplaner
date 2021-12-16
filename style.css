@@ -295,7 +295,7 @@ Reset und Normalize
 
 .sleep {
   background-color: darkblue;
-  color: #fff;
+  color: var(--bg);
 }
 
 .exercise {
@@ -304,6 +304,7 @@ Reset und Normalize
 
 .eating {
   background-color: darkmagenta;
+  color: var(--bg);
 }
 
 .btn {
@@ -532,6 +533,7 @@ fieldset {
 .supplements a {
   background-color: cadetblue;
   padding: 0.7rem 1rem;
+  margin-top: 3rem;
 }
 
 .card {
