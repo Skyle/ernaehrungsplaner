@@ -94,7 +94,7 @@ header h1 {
 
 @media (orientation: landscape) and (min-width: 500px) {
      .section-main{
-         color:cyan;
+         color:black;
      }
 }
 
