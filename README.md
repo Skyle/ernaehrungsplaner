@@ -19,9 +19,9 @@ Verteilung:
 
 ## TODO
 
-- Farben überarbeiten
-- Startseite bereichern
-- Anwer mergen
-- Design vereinheitlichen
-- Footer erstellen
+- ~~Farben überarbeiten~~
+- ~~Startseite bereichern~~
+- ~~Anwer mergen~~
+- ~~Design vereinheitlichen~~
+- ~~Footer erstellen~~
 - Aufräumen der Unterseiten
