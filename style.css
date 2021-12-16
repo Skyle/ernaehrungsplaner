@@ -295,7 +295,7 @@ Reset und Normalize
 
 .sleep {
   background-color: darkblue;
-  color: var(--bg);
+  color: #fff;
 }
 
 .exercise {
@@ -304,7 +304,6 @@ Reset und Normalize
 
 .eating {
   background-color: darkmagenta;
-  color: var(--bg);
 }
 
 .btn {
@@ -313,10 +312,11 @@ Reset und Normalize
   height: 35px;
   font-size: 1.5rem;
   color: #323232;
+  border: rgb(32, 32, 32) solid 4px;
   background: linear-gradient(
     to right bottom,
-    #15803d,
-    #01af1b
+    rgba(207, 197, 197),
+    #f0f0e4
   );
   border: none;
   border-radius: 20px;
@@ -327,8 +327,8 @@ Reset und Normalize
   color: #323232;
   background: linear-gradient(
     to left top,
-    #01af1b,
-    #15803d
+    rgba(207, 197, 197),
+    #f0f0e4
   );
   border-color: none;
 }
