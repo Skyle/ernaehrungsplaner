@@ -87,15 +87,14 @@ main {
 
 header {
   text-align: center;
-  background-color: var(--secondary);
-  color: var(--bg);
+
   box-shadow: var(--shadow);
 }
 
 header h1 {
   margin: 0;
   padding: 2rem 1rem;
-  color: var(--bg);
+  color: var(--secondary);
 }
 
 /* Tablet */
