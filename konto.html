@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/0e6b9353f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Konto</title>
+  </head>
+  <body>
+    <header>
+        <a href="/"> <h1>Ernährungsplaner</h1> </a>
+    </header>
+    <main class="profile-main">
+        <section class="pro-img">
+            <img
+              src="https://www.pinclipart.com/picdir/middle/148-1486972_mystery-man-avatar-circle-clipart.png"
+              alt="pro-img"
+            />
+            <h4>User-name</h4>
+          </section>
+        <section class="form-part">
+      <form action="https://formspree.io/f/xdobnwpy" method="post">
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label for="first-name"> Vorname:</label>
+          <input
+          class="profile-input-txt first-name"
+            type="text"
+            name="fname"
+            id="first-name"
+            autofocus
+            required
+          />
+          <br />
+          <br />
+          
+          <label for="last-name"> Nachname:</label>
+          <input  class="profile-input-txt" type="text" name="lname" id="last-name" required />
+          <br />
+          <br />
+         
+          <label for="address">Addresse:</label>
+          <input  class="profile-input-txt" type="text" id="address" name="user-address" maxlength="20" />
+          <br />
+          <br />
+          
+          <label for="email">Email:</label>
+          <input
+          
+            type="email"
+            name="email"
+            id="email"
+            placeholder="omar@example.com"
+            required
+          />
+        </fieldset>
+
+        <fieldset class="fragen">
+            <legend>Fragen</legend>
+            <label for="krankheit" class="profile-label"></label>
+              <p>Leiden Sie unter besondere Krankheit?</p></label
+            >
+            <input
+              class="profile-input-txt"
+              type="text"
+              id="krankheit"
+              name="krankheit"
+              placeholder="Z.B Asthma"
+            />
+            <br />
+            <br />
+            <label for="allergie" class="profile-label">
+              <p>Wogegen Haben Sie Allergie?</p></label
+            >
+            <input
+              class="profile-input-txt"
+              type="text"
+              id="allergie"
+              name="allergie"
+              placeholder="Z.B Walnuss"
+            />
+            <br /><br />
+            <label for="essen" class="profile-label"
+              ><p>Was essen Sie nicht?</p></label
+            >
+            <input
+              class="profile-input-txt"
+              type="text"
+              id="essen"
+              name="essen"
+              placeholder="Z.B Fisch"
+            />
+            <br />
+            <br />
+            <button type="submit" class="profile-button">Submit</button>
+          </fieldset>
+
+        <fieldset>
+          <legend>Diet Trends</legend>
+          <input
+            type="checkbox"
+            id="keto"
+            name="diet-trend"
+            value="diet-trend"
+          />
+          <label for="keto">Keto</label> <br />
+          <br />
+          <input
+          type="checkbox"
+          id="vegetarian"
+          name="diet-trend"
+          value="diet-trend"
+        />
+        <label for="vegetarian">Vegetarian</label> <br />
+        <br />
+          <input
+            type="checkbox"
+            id="vegan"
+            name="diet-trend"
+            value="diet-trend"
+          />
+          <label for="vegan">Vegan</label> <br />
+          <br />
+
+          <input
+            type="checkbox"
+            id="hp-lc"
+            name="diet-trend"
+            value="diet-trend"
+          />
+          <label for="hp-lc">Heigh Protein, Low Carb</label> <br />
+          <br />
+            
+        </fieldset>
+        <button class="profile-button" type="button"> <a href="profile.html" title="Back"><i class="fas fa-arrow-left"></i> </a></button> 
+        <button type="submit" class="profile-button ">Submit</button>
+            <button type="reset" class="profile-button ">Reset</button>
+           
+           
+       
+      </form>
+    </section>
+    </main>
+    <footer class="footerflex">
+      <div class="footeritem"> </div>
+      <div class="footeritem"></div>
+      <div class="footeritem"></div>
+      <div class="footeritem"></div>
+    </footer>
+  </body>
+</html>
