@@ -33,7 +33,8 @@ body {
   --primary: blue;
   --secondary: #15803d;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
 }
 
@@ -80,7 +81,7 @@ main {
   border: 2px solid black;
   padding: 1rem;
   border-radius: 4px;
-  background-color: rgb(240, 240, 228);
+  background-color: #f0f0e4;
   box-shadow: var(--shadow);
 }
 
@@ -117,6 +118,8 @@ header h1 {
 /* Footer */
 
 .footerflex {
+  box-shadow: var(--shadow);
+
   margin-top: 4rem;
   display: flex;
   color: var(--bg);
@@ -143,10 +146,10 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .pro-img{
+  .pro-img {
     text-align: center;
   }
-  .profile-main .profile-input-txt[type="text"]{
+  .profile-main .profile-input-txt[type="text"] {
     width: 100%;
   }
 }
@@ -181,15 +184,15 @@ header h1 {
 #rezepteNavbar a {
   display: block;
   text-decoration: none;
-  background-color: gray;
-  color: white;
+  background-color: #f0f0e4;
+  box-shadow: var(--shadow);
   text-transform: uppercase;
   border-radius: 10px;
   padding: 2rem;
 }
 #rezepteNavbar a:hover {
-  background-color: black;
-  color: white;
+  background-color: #cfc5c5;
+  color: var(--text);
 }
 .rezeptBox {
   display: grid;
@@ -200,7 +203,8 @@ header h1 {
     "rezeptImage rezeptText";
   gap: 20px;
   padding: 15px;
-  background-color: rgb(185, 171, 185);
+  /* background-color: rgb(185, 171, 185); */
+  background-color: rgb(207, 197, 197);
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -233,7 +237,7 @@ Reset und Normalize
 }
 
 .header_train {
-  background-color: var(--secondary);
+  background-color: var(--bg);
   height: 10vh;
 }
 
@@ -291,7 +295,7 @@ Reset und Normalize
 
 .sleep {
   background-color: darkblue;
-  color: #fff;
+  color: var(--bg);
 }
 
 .exercise {
@@ -300,10 +304,36 @@ Reset und Normalize
 
 .eating {
   background-color: darkmagenta;
+  color: var(--bg);
+}
+
+.btn {
+  margin: 1rem auto;
+  width: 177px;
+  height: 35px;
+  font-size: 1.5rem;
+  color: #323232;
+  background: linear-gradient(
+    to right bottom,
+    #15803d,
+    #01af1b
+  );
+  border: none;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  color: #323232;
+  background: linear-gradient(
+    to left top,
+    #01af1b,
+    #15803d
+  );
+  border-color: none;
 }
 
 /* omar */
-
 
 .pro-img img {
   width: 10rem;
@@ -355,6 +385,7 @@ fieldset {
   background-color: rgb(207, 197, 197);
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 #headline {
@@ -425,7 +456,8 @@ fieldset {
 }
 
 .sBox,
-.mainitem {
+.mainitem,
+#rezepteNavbar a {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -442,11 +474,13 @@ fieldset {
 }
 
 .sBox {
-  border: 1px solid rgb(47, 46, 46);
+  border: 1px solid rgb(54, 51, 51);
   border-radius: 10px;
+  width: 100%;
+  background-color: rgb(240, 240, 228);
 }
 
-.sBox,
+.sBox:hover,
 .mainitem:hover {
   background-color: rgba(207, 197, 197);
   color: var(--text);
@@ -499,6 +533,7 @@ fieldset {
 .supplements a {
   background-color: cadetblue;
   padding: 0.7rem 1rem;
+  margin-top: 3rem;
 }
 
 .card {
