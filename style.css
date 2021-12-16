@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+* {
+=======
 /* Reset und Imports */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -5,9 +8,15 @@
 *,
 ::before,
 ::after {
+>>>>>>> main
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+<<<<<<< HEAD
+html,
+=======
 a {
   text-decoration: none;
   color: var(--text);
@@ -17,22 +26,29 @@ hr {
   color: inherit; /* 2 */
 }
 
+>>>>>>> main
 body {
-  margin: 0; /* 1 */
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
   font-size: 1.6rem;
 }
 
+<<<<<<< HEAD
+.sBox {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  font-size: 1.6rem;
+=======
 .section-main {
   padding: 4rem;
   width: 70%;
   margin: auto;
   text-align: center;
+>>>>>>> main
 }
-
-/* Variablen */
 
 :root {
   --bg: rgb(252, 252, 252);
@@ -43,6 +59,15 @@ body {
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+main {
+  padding: 1rem 1rem;
 }
 
 /* Hauptgrid */
@@ -80,12 +105,9 @@ header h1 {
   color: var(--bg);
 }
 
-main {
-  padding: 1rem 1rem;
-}
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .maingrid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -102,6 +124,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
 
   main {
     padding: 1rem 4rem;
@@ -187,8 +210,6 @@ main {
 .pro-img h4 {
   text-align: center;
 }
-
-/*
 hr {
   border: 1px solid lightgray;
   width: 80%;
@@ -199,7 +220,7 @@ fieldset {
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
-*/
+
 .profile-input-txt[type="text"] {
   width: 90%;
   margin-top: 0.5rem;
@@ -215,12 +236,11 @@ fieldset {
 /********************************************************/
 /******************Mehmet********************************/
 /********************************************************/
-/*
-aside {
+
+#elemente {
   background-color: rgb(207, 197, 197);
   border-radius: 5px;
 }
-*/
 
 #headline {
   margin: 3rem 0;
@@ -235,12 +255,10 @@ aside {
 .box {
   padding: 2rem 2rem;
 }
-
-/*
-aside h2 {
+#elemente h2 {
   padding: 2rem 2rem;
 }
-*/
+
 #mainContainer {
   margin-top: 2rem;
   display: grid;
@@ -248,9 +266,9 @@ aside h2 {
   grid-template-columns: 1fr 0.4fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "containerErnährung aside"
-    "containerErnährung aside"
-    "containerErnährung aside";
+    "containerErnährung elemente"
+    "containerErnährung elemente"
+    "containerErnährung elemente";
 }
 
 .containerErnährung {
@@ -261,10 +279,10 @@ aside h2 {
   display: flex;
   flex-direction: column;
 }
-/*
-aside {
-  grid-area: aside;
-*/
+
+#elemente {
+  grid-area: elemente;
+}
 .sport {
   margin: 3rem 0;
   align-self: flex-start;
@@ -284,10 +302,8 @@ aside {
 
 .boxOben {
   display: flex;
-
   display: -webkit-flex;
   display: -ms-flex;
-
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -298,6 +314,7 @@ aside {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  align-items: baseline;
 }
 
 .sBox {
@@ -306,7 +323,7 @@ aside {
 }
 
 .sBox:hover {
-  background-color: rgba(73, 66, 66, 0.726);
+  background-color: rgba(207, 197, 197);
   color: var(--text);
 }
 
@@ -316,26 +333,26 @@ aside {
 }
 
 .sBoxEx h3 {
-  margin-bottom: 1.4rem;
   font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .sBoxEx img {
-  width: 70%;
-  height: 35%;
+  width: 100%;
+
   border-radius: 10px;
 }
 
-.sBox {
-  transition: all 300ms;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
-  font-size: 1.6rem;
+.sBoxEx {
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 75%;
 }
 
 .sBoxEx p {
-  width: 70%;
-  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 90%;
+  margin: 2rem auto;
 
   letter-spacing: 0.09rem;
 }
@@ -370,3 +387,4 @@ aside {
   border-radius: 5px;
   box-shadow: 1px 1px 5px #8a8a8a;
 }
+
