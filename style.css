@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset und Imports */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
@@ -6,6 +6,11 @@
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 body {
@@ -16,6 +21,17 @@ body {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+main {
+  padding: 1rem 1rem;
+}
+
+/* Variablen */
+
 :root {
   --bg: rgb(252, 252, 252);
   --text: rgb(32, 32, 32);
@@ -24,15 +40,6 @@ body {
   --button: yellow;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text);
-}
-
-main {
-  padding: 1rem 1rem;
 }
 
 /* Hauptgrid */
