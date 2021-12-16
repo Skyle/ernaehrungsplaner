@@ -54,6 +54,27 @@ img {
     box-shadow: 1px 1px 5px #8a8a8a;
 }
 
+@media screen and (max-width: 500px) {
+    body{
+        color: blue;
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 500px) {
+     .section-main{
+         color:cyan;
+     }
+}
+
+@media (orientation: portrait) {
+    .card{
+        color: cyan;
+    }
+    
+}
+
+
 footer{
     text-align: center;
 }
