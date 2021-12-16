@@ -117,6 +117,8 @@ header h1 {
 /* Footer */
 
 .footerflex {
+  box-shadow: var(--shadow);
+
   margin-top: 4rem;
   display: flex;
   color: var(--bg);
@@ -355,6 +357,7 @@ fieldset {
   background-color: rgb(207, 197, 197);
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 #headline {
