@@ -1,6 +1,8 @@
-# ernaehrungsplaner
+# Ernährungsplaner
 
-hier arbeiten wixr an unserem Projekt
+Hier arbeiten die Contributors an einem Ernährungsplaner im Rahmen der DCI.
+
+Verteilung:
 
 - omar: Profil
 - omer: Rezepte
@@ -14,3 +16,12 @@ hier arbeiten wixr an unserem Projekt
 - Bereichsübersicht
 - vorgestelltes Supplement
 - Übung des Monats
+
+## TODO
+
+- Farben überarbeiten
+- Startseite bereichern
+- Anwer mergen
+- Design vereinheitlichen
+- Footer erstellen
+- Aufräumen der Unterseiten
