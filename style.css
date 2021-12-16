@@ -145,6 +145,12 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .pro-img{
+    text-align: center;
+  }
+  .profile-main .profile-input-txt[type="text"]{
+    width: 100%;
+  }
 }
 
 /* Desktop */
@@ -304,9 +310,8 @@ Reset und Normalize
 }
 
 /* omar */
-/* .pro-img {
-  text-align: center;
-} */
+
+
 .pro-img img {
   width: 10rem;
 }
@@ -316,6 +321,7 @@ Reset und Normalize
 hr {
   border: 1px solid lightgray;
   width: 80%;
+  margin-left: 10%;
 }
 fieldset {
   width: 90%;
