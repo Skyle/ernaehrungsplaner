@@ -1,20 +1,36 @@
-* {
+/* Reset und Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::before,
+::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
-html,
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
 body {
+  margin: 0; /* 1 */
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
-  transition: all 300ms;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
   font-size: 1.6rem;
 }
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+main {
+  padding: 1rem 1rem;
+}
+
+/* Variablen */
 
 :root {
   --bg: rgb(252, 252, 252);
@@ -25,15 +41,6 @@ body {
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text);
-}
-
-main {
-  padding: 1rem 1rem;
 }
 
 /* Hauptgrid */
@@ -158,6 +165,8 @@ header h1 {
 .pro-img h4 {
   text-align: center;
 }
+
+/*
 hr {
   border: 1px solid lightgray;
   width: 80%;
@@ -168,7 +177,7 @@ fieldset {
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
-
+*/
 .profile-input-txt[type="text"] {
   width: 90%;
   margin-top: 0.5rem;
@@ -179,4 +188,132 @@ fieldset {
 .profile-button {
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+/********************************************************/
+/******************Mehmet********************************/
+/********************************************************/
+/*
+aside {
+  background-color: rgb(207, 197, 197);
+  border-radius: 5px;
+}
+*/
+
+#headline {
+  margin: 3rem 0;
+  text-align: center;
+}
+.box p {
+  letter-spacing: 0.09rem;
+}
+.box h3 {
+  padding-bottom: 2rem;
+}
+.box {
+  padding: 2rem 2rem;
+}
+
+/*
+aside h2 {
+  padding: 2rem 2rem;
+}
+*/
+#mainContainer {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "containerErnährung aside"
+    "containerErnährung aside"
+    "containerErnährung aside";
+}
+
+.containerErnährung {
+  grid-area: containerErnährung;
+}
+.containerSport {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+/*
+aside {
+  grid-area: aside;
+*/
+.sport {
+  margin: 3rem 0;
+  align-self: flex-start;
+}
+.sport h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.abox {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+  text-align: center;
+  margin: 4rem 3rem;
+}
+
+.boxOben {
+  display: flex;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.untenBox {
+  grid-area: untenBox;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.sBox {
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 10px;
+}
+
+.sBox:hover {
+  background-color: rgba(73, 66, 66, 0.726);
+  color: var(--text);
+}
+
+.sBox h3 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.sBoxEx h3 {
+  margin-bottom: 1.4rem;
+  font-size: 2.1rem;
+}
+.sBoxEx img {
+  width: 70%;
+  height: 35%;
+  border-radius: 10px;
+}
+
+.sBox {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  font-size: 1.6rem;
+}
+
+.sBoxEx p {
+  width: 70%;
+  margin: 2rem 0;
+
+  letter-spacing: 0.09rem;
 }
