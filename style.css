@@ -46,6 +46,13 @@ main {
   padding: 1rem 1rem;
 }
 
+/* Helper */
+
+.flexw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Hauptgrid */
 
 .maingrid {
@@ -137,70 +144,51 @@ header h1 {
   grid-template-rows: 1fr 1fr;
 }
 
-
-
 /*REZEPTE-ÖMER*/
-#rezepteNavbar ul{
+#rezepteNavbar ul {
   display: flex;
   justify-content: space-around;
 }
-#rezepteNavbar li{
+#rezepteNavbar li {
   display: inline-block;
-  
 }
-#rezepteNavbar a{
+#rezepteNavbar a {
   display: block;
   text-decoration: none;
   background-color: gray;
   color: white;
   text-transform: uppercase;
- border-radius: 10px;
+  border-radius: 10px;
   padding: 2rem;
-  
 }
-#rezepteNavbar a:hover{
+#rezepteNavbar a:hover {
   background-color: black;
   color: white;
 }
-.rezeptBox{
+.rezeptBox {
   display: grid;
-  grid-template-rows:1fr auto ;
-  grid-template-rows:1fr auto ;
-  grid-template-areas: 
-  "title title"
-  "rezeptImage rezeptText";
+  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "title title"
+    "rezeptImage rezeptText";
   gap: 20px;
   padding: 15px;
   background-color: rgb(185, 171, 185);
   margin-bottom: 20px;
   border-radius: 5px;
-
 }
-.rezeptBox h3{
+.rezeptBox h3 {
   grid-area: title;
 }
-.rezeptBox img{
+.rezeptBox img {
   grid-area: rezeptImage;
   border-radius: 5px;
 }
-.rezeptBox p{
+.rezeptBox p {
   grid-area: rezeptText;
   line-height: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -313,6 +301,12 @@ fieldset {
 #elemente {
   background-color: rgb(207, 197, 197);
   border-radius: 5px;
+}
+
+.elemente {
+  background-color: rgb(207, 197, 197);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 #headline {
