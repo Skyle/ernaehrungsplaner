@@ -1,4 +1,3 @@
-
 /* Reset und Imports */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -20,15 +19,13 @@ body {
   color: var(--text);
   background-color: var(--bg);
   font-size: 1.6rem;
-
 }
 
-
 .section-main {
-    padding: 4rem;
-    width: 70%;
-    margin: auto;
-    text-align: center;
+  padding: 4rem;
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
 
 /* Variablen */
@@ -62,54 +59,52 @@ body {
   border-radius: 4px;
   background-color: rgb(240, 240, 228);
   box-shadow: var(--shadow);
-
 }
 
 img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 
 header h1 {
   margin: 0;
   padding: 2rem 1rem;
   color: var(--bg);
-
 }
 
 .card {
-    background: linear-gradient(to right bottom, rgb(96, 96, 255, 0.6), rgba(243, 66, 149, 0.664));
-    padding: 3rem;
-    /* border: 1px solid #b4eeb4; */
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px #8a8a8a;
+  background: linear-gradient(
+    to right bottom,
+    rgb(96, 96, 255, 0.6),
+    rgba(243, 66, 149, 0.664)
+  );
+  padding: 3rem;
+  /* border: 1px solid #b4eeb4; */
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #8a8a8a;
 }
 
 @media screen and (max-width: 500px) {
-    body{
-        color: blue;
-    }
+  body {
+    color: blue;
+  }
 }
-
 
 @media (orientation: landscape) and (min-width: 500px) {
-     .section-main{
-         color:cyan;
-     }
+  .section-main {
+    color: cyan;
+  }
 }
-
 
 @media (orientation: portrait) {
-    .card{
-        color: cyan;
-    }
-    
+  .card {
+    color: cyan;
+  }
 }
 
-
-footer{
-    text-align: center;
+footer {
+  text-align: center;
 }
 
 /* Hier macht sich jeder einen Bereich */
@@ -143,8 +138,9 @@ footer{
 .days {
   display: grid;
   grid-template-rows: 1fr;
-  background-color: lightgray;
+  background-color: rgb(240, 240, 228);
   margin: 2rem 0;
+  box-shadow: var(--shadow);
 }
 
 .time {
@@ -342,23 +338,22 @@ aside {
 
   letter-spacing: 0.09rem;
 }
- 
 
 .lead {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 .supplements {
-    padding: 4rem;
-    display: grid;
-    gap: 2rem;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  padding: 4rem;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .supplements a {
-    background-color: cadetblue;
-    padding: 0.7rem 1rem;
+  background-color: cadetblue;
+  padding: 0.7rem 1rem;
 }
