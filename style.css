@@ -6,6 +6,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -18,7 +20,6 @@ hr {
 }
 
 body {
-  margin: 0; /* 1 */
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
@@ -32,8 +33,6 @@ body {
   text-align: center;
 }
 
-/* Variablen */
-
 :root {
   --bg: rgb(252, 252, 252);
   --text: rgb(32, 32, 32);
@@ -42,6 +41,15 @@ body {
   --button: yellow;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+main {
+  padding: 1rem 1rem;
 }
 
 /* Hauptgrid */
@@ -78,11 +86,6 @@ header h1 {
   padding: 2rem 1rem;
   color: var(--bg);
 }
-/* img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-}
 
 header h1 {
   margin: 0;
@@ -111,25 +114,33 @@ header h1 {
         color: blue;
     }
 }
+=======
+>>>>>>> origin/main
 
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .maingrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-@media (orientation: landscape) and (min-width: 500px) {
-     .section-main{
-         color:cyan;
-     }
+  main {
+    padding: 1rem 2rem;
+  }
 }
 
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .maingrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
-@media (orientation: portrait) {
-    .card{
-        color: cyan;
-    }
-    
-} */
 
-/* footer{
-    text-align: center;
-} */
+  main {
+    padding: 1rem 4rem;
+  }
+}
 
 /* Hier macht sich jeder einen Bereich */
 
@@ -286,8 +297,6 @@ Reset und Normalize
 .pro-img h4 {
   text-align: center;
 }
-
-/*
 hr {
   border: 1px solid lightgray;
   width: 80%;
@@ -298,7 +307,7 @@ fieldset {
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
-*/
+
 .profile-input-txt[type="text"] {
   width: 90%;
   margin-top: 0.5rem;
@@ -314,12 +323,11 @@ fieldset {
 /********************************************************/
 /******************Mehmet********************************/
 /********************************************************/
-/*
-aside {
+
+#elemente {
   background-color: rgb(207, 197, 197);
   border-radius: 5px;
 }
-*/
 
 #headline {
   margin: 3rem 0;
@@ -334,12 +342,10 @@ aside {
 .box {
   padding: 2rem 2rem;
 }
-
-/*
-aside h2 {
+#elemente h2 {
   padding: 2rem 2rem;
 }
-*/
+
 #mainContainer {
   margin-top: 2rem;
   display: grid;
@@ -347,9 +353,9 @@ aside h2 {
   grid-template-columns: 1fr 0.4fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "containerErnährung aside"
-    "containerErnährung aside"
-    "containerErnährung aside";
+    "containerErnährung elemente"
+    "containerErnährung elemente"
+    "containerErnährung elemente";
 }
 
 .containerErnährung {
@@ -360,10 +366,10 @@ aside h2 {
   display: flex;
   flex-direction: column;
 }
-/*
-aside {
-  grid-area: aside;
-*/
+
+#elemente {
+  grid-area: elemente;
+}
 .sport {
   margin: 3rem 0;
   align-self: flex-start;
@@ -383,10 +389,8 @@ aside {
 
 .boxOben {
   display: flex;
-
   display: -webkit-flex;
   display: -ms-flex;
-
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -397,6 +401,7 @@ aside {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  align-items: baseline;
 }
 
 .sBox {
@@ -405,7 +410,7 @@ aside {
 }
 
 .sBox:hover {
-  background-color: rgba(73, 66, 66, 0.726);
+  background-color: rgba(207, 197, 197);
   color: var(--text);
 }
 
@@ -415,26 +420,26 @@ aside {
 }
 
 .sBoxEx h3 {
-  margin-bottom: 1.4rem;
   font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .sBoxEx img {
-  width: 70%;
-  height: 35%;
+  width: 100%;
+
   border-radius: 10px;
 }
 
-.sBox {
-  transition: all 300ms;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
-  font-size: 1.6rem;
+.sBoxEx {
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 75%;
 }
 
 .sBoxEx p {
-  width: 70%;
-  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 90%;
+  margin: 2rem auto;
 
   letter-spacing: 0.09rem;
 }
@@ -457,3 +462,16 @@ aside {
   background-color: cadetblue;
   padding: 0.7rem 1rem;
 }
+
+.card {
+  background: linear-gradient(
+    to right bottom,
+    rgb(96, 96, 255, 0.6),
+    rgba(243, 66, 149, 0.664)
+  );
+  padding: 3rem;
+  /* border: 1px solid #b4eeb4; */
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #8a8a8a;
+}
+
