@@ -14,7 +14,7 @@ a {
 }
 img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 hr {
   height: 0; /* 1 */
@@ -45,6 +45,24 @@ a {
 
 main {
   padding: 1rem 1rem;
+}
+
+/* Helper */
+
+.grow {
+  flex-grow: 1;
+}
+
+.flexw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexmid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 /* Hauptgrid */
@@ -98,6 +116,20 @@ header h1 {
   color: var(--secondary);
 }
 
+/* Footer */
+
+.footerflex {
+  margin-top: 4rem;
+  display: flex;
+  color: var(--bg);
+  padding: 4rem;
+  background-color: var(--secondary);
+}
+
+.footeritem {
+  padding-top: 1rem;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .maingrid {
@@ -132,70 +164,56 @@ header h1 {
   }
 }
 
+
 /* Hier macht sich jeder einen Bereich */
 
+
 /*REZEPTE-ÖMER*/
-#rezepteNavbar ul{
+#rezepteNavbar ul {
   display: flex;
   justify-content: space-around;
 }
-#rezepteNavbar li{
+#rezepteNavbar li {
   display: inline-block;
 
 }
-#rezepteNavbar a{
+#rezepteNavbar a {
   display: block;
   text-decoration: none;
   background-color: gray;
   color: white;
   text-transform: uppercase;
- border-radius: 10px;
+  border-radius: 10px;
   padding: 2rem;
-
 }
-#rezepteNavbar a:hover{
+#rezepteNavbar a:hover {
   background-color: black;
   color: white;
 }
-.rezeptBox{
+.rezeptBox {
   display: grid;
-  grid-template-rows:1fr auto ;
-  grid-template-rows:1fr auto ;
-  grid-template-areas: 
-  "title title"
-  "rezeptImage rezeptText";
+  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "title title"
+    "rezeptImage rezeptText";
   gap: 20px;
   padding: 15px;
   background-color: rgb(185, 171, 185);
   margin-bottom: 20px;
   border-radius: 5px;
-
 }
-.rezeptBox h3{
+.rezeptBox h3 {
   grid-area: title;
 }
-.rezeptBox img{
+.rezeptBox img {
   grid-area: rezeptImage;
   border-radius: 5px;
 }
-.rezeptBox p{
+.rezeptBox p {
   grid-area: rezeptText;
   line-height: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 Reset und Normalize
@@ -332,6 +350,12 @@ fieldset {
 #elemente {
   background-color: rgb(207, 197, 197);
   border-radius: 5px;
+}
+
+.elemente {
+  background-color: rgb(207, 197, 197);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 #headline {
