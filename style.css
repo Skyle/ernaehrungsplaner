@@ -7,6 +7,7 @@
   margin: 0;
 }
 
+
 a {
   text-decoration: none;
   color: var(--text);
@@ -33,7 +34,7 @@ body {
   --primary: blue;
   --secondary: #15803d;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
 }
 
@@ -99,11 +100,13 @@ main {
 .mainItemText {
   padding: 2rem 0rem;
 }
+
 /* Header */
 
 header {
   text-align: center;
-
+  background-color: var(--secondary);
+  color: var(--bg);
   box-shadow: var(--shadow);
 }
 
@@ -137,6 +140,11 @@ header h1 {
   main {
     padding: 1rem 2rem;
   }
+
+  .media_grid_marc1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Desktop */
@@ -149,25 +157,16 @@ header h1 {
   main {
     padding: 1rem 4rem;
   }
+
+  .media_grid_marc1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
+
 
 /* Hier macht sich jeder einen Bereich */
 
-/* Marc trainingsplan */
-
-.span-block {
-  display: inline-block;
-}
-
-.header_train {
-  background-color: var(--secondary);
-  height: 10vh;
-}
-
-.train_grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
 
 /*REZEPTE-ÖMER*/
 #rezepteNavbar ul {
@@ -176,6 +175,7 @@ header h1 {
 }
 #rezepteNavbar li {
   display: inline-block;
+
 }
 #rezepteNavbar a {
   display: block;
@@ -216,15 +216,31 @@ header h1 {
 }
 
 /*
-
 Reset und Normalize
-
 */
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+
+
+/* Marc trainingsplan */
+
+.span-block {
+  display: inline-block;
+}
+
+.header_train {
+  background-color: var(--secondary);
+  height: 10vh;
+}
+
+.train_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .train_grid img {
@@ -274,8 +290,17 @@ Reset und Normalize
 .timeslot2 {
 } */
 
-.colored {
-  background-color: var(--secondary);
+.sleep {
+  background-color: darkblue;
+  color: #fff;
+}
+
+.exercise {
+  background-color: red;
+}
+
+.eating {
+  background-color: darkmagenta;
 }
 
 /* omar */
@@ -288,7 +313,6 @@ Reset und Normalize
 .pro-img h4 {
   text-align: center;
 }
-
 hr {
   border: 1px solid lightgray;
   width: 80%;
@@ -410,6 +434,8 @@ fieldset {
   font-size: 1.6rem;
 }
 
+
+
 .untenBox {
   grid-area: untenBox;
   display: grid;
@@ -424,7 +450,7 @@ fieldset {
 }
 
 .sBox,
-.mainitem:hover {
+.mainitem:hover  {
   background-color: rgba(207, 197, 197);
   color: var(--text);
 }
