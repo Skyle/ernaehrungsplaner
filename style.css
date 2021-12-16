@@ -1,10 +1,32 @@
+<<<<<<< HEAD
 * {
+=======
+/* Reset und Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::before,
+::after {
+>>>>>>> main
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+<<<<<<< HEAD
 html,
+=======
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+>>>>>>> main
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
@@ -12,12 +34,20 @@ body {
   font-size: 1.6rem;
 }
 
+<<<<<<< HEAD
 .sBox {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   font-size: 1.6rem;
+=======
+.section-main {
+  padding: 4rem;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+>>>>>>> main
 }
 
 :root {
@@ -74,6 +104,7 @@ header h1 {
   color: var(--bg);
 }
 
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .maingrid {
@@ -93,6 +124,7 @@ header h1 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+
   main {
     padding: 1rem 4rem;
   }
@@ -101,6 +133,10 @@ header h1 {
 /* Hier macht sich jeder einen Bereich */
 
 /* Marc trainingsplan */
+
+.span-block {
+  display: inline-block;
+}
 
 .header_train {
   background-color: var(--secondary);
@@ -124,30 +160,42 @@ header h1 {
 
 .days {
   display: grid;
-  grid-template-rows: 1fr 50px 1fr;
+  grid-template-rows: 1fr;
+  background-color: lightgray;
+  margin: 2rem 0;
 }
 
 .time {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 0.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 30px);
 }
 
-.time {
+.grid-weekflow {
   display: grid;
-  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-.timeslot {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
+/* .hour1 {
+  grid-area: 1/1/2/13;
 }
+
+.timeslot1 {
+  grid-area: 2/1/3/13;
+}
+
+.hour2 {
+  grid-area: 1/1/2/13;
+}
+
+.timeslot2 {
+} */
+
 .colored {
-  display: inline-block;
-  width: 20px;
-  background-color: red;
+  background-color: var(--secondary);
 }
 
 /* omar */
@@ -306,3 +354,35 @@ fieldset {
 
   letter-spacing: 0.09rem;
 }
+
+.lead {
+  width: 50%;
+  margin: auto;
+}
+
+.supplements {
+  padding: 4rem;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.supplements a {
+  background-color: cadetblue;
+  padding: 0.7rem 1rem;
+}
+
+.card {
+  background: linear-gradient(
+    to right bottom,
+    rgb(96, 96, 255, 0.6),
+    rgba(243, 66, 149, 0.664)
+  );
+  padding: 3rem;
+  /* border: 1px solid #b4eeb4; */
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #8a8a8a;
+}
+
