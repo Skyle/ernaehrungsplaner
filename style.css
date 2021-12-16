@@ -48,9 +48,20 @@ main {
 
 /* Helper */
 
+.grow {
+  flex-grow: 1;
+}
+
 .flexw {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flexmid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 /* Hauptgrid */
@@ -88,11 +99,12 @@ main {
 .mainItemText {
   padding: 2rem 0rem;
 }
+
 /* Header */
 
 header {
   text-align: center;
-
+  background-color: var(--bg);
   box-shadow: var(--shadow);
 }
 
@@ -100,6 +112,20 @@ header h1 {
   margin: 0;
   padding: 2rem 1rem;
   color: var(--secondary);
+}
+
+/* Footer */
+
+.footerflex {
+  margin-top: 4rem;
+  display: flex;
+  color: var(--bg);
+  padding: 4rem;
+  background-color: var(--secondary);
+}
+
+.footeritem {
+  padding-top: 1rem;
 }
 
 /* Tablet */
@@ -111,6 +137,17 @@ header h1 {
 
   main {
     padding: 1rem 2rem;
+  }
+
+  .media_grid_marc1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .pro-img{
+    text-align: center;
+  }
+  .profile-main .profile-input-txt[type="text"]{
+    width: 100%;
   }
 }
 
@@ -124,25 +161,14 @@ header h1 {
   main {
     padding: 1rem 4rem;
   }
+
+  .media_grid_marc1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Hier macht sich jeder einen Bereich */
-
-/* Marc trainingsplan */
-
-.span-block {
-  display: inline-block;
-}
-
-.header_train {
-  background-color: var(--secondary);
-  height: 10vh;
-}
-
-.train_grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
 
 /*REZEPTE-ÖMER*/
 #rezepteNavbar ul {
@@ -191,15 +217,29 @@ header h1 {
 }
 
 /*
-
 Reset und Normalize
-
 */
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+/* Marc trainingsplan */
+
+.span-block {
+  display: inline-block;
+}
+
+.header_train {
+  background-color: var(--secondary);
+  height: 10vh;
+}
+
+.train_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .train_grid img {
@@ -249,24 +289,32 @@ Reset und Normalize
 .timeslot2 {
 } */
 
-.colored {
-  background-color: var(--secondary);
+.sleep {
+  background-color: darkblue;
+  color: #fff;
+}
+
+.exercise {
+  background-color: red;
+}
+
+.eating {
+  background-color: darkmagenta;
 }
 
 /* omar */
-/* .pro-img {
-  text-align: center;
-} */
+
+
 .pro-img img {
   width: 10rem;
 }
 .pro-img h4 {
   text-align: center;
 }
-
 hr {
   border: 1px solid lightgray;
   width: 80%;
+  margin-left: 10%;
 }
 fieldset {
   width: 90%;
