@@ -48,9 +48,20 @@ main {
 
 /* Helper */
 
+.grow {
+  flex-grow: 1;
+}
+
 .flexw {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flexmid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 /* Hauptgrid */
@@ -100,6 +111,20 @@ header h1 {
   margin: 0;
   padding: 2rem 1rem;
   color: var(--secondary);
+}
+
+/* Footer */
+
+.footerflex {
+  margin-top: 4rem;
+  display: flex;
+  color: var(--bg);
+  padding: 4rem;
+  background-color: var(--secondary);
+}
+
+.footeritem {
+  padding-top: 1rem;
 }
 
 /* Tablet */
