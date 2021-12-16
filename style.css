@@ -186,8 +186,21 @@ header h1 {
 .timeslot2 {
 } */
 
-.colored {
+/* .colored {
   background-color: var(--secondary);
+} */
+
+.sleep {
+  background-color: darkblue;
+  color: #fff;
+}
+
+.exercise {
+  background-color: red;
+}
+
+.eating {
+  background-color: darkmagenta;
 }
 
 /* omar */
