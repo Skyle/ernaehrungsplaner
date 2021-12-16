@@ -146,10 +146,10 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .pro-img{
+  .pro-img {
     text-align: center;
   }
-  .profile-main .profile-input-txt[type="text"]{
+  .profile-main .profile-input-txt[type="text"] {
     width: 100%;
   }
 }
@@ -236,7 +236,7 @@ Reset und Normalize
 }
 
 .header_train {
-  background-color: var(--secondary);
+  background-color: var(--bg);
   height: 10vh;
 }
 
@@ -332,7 +332,6 @@ Reset und Normalize
 }
 
 /* omar */
-
 
 .pro-img img {
   width: 10rem;
