@@ -10,6 +10,7 @@
   margin: 0;
 }
 
+html,
 a {
   text-decoration: none;
   color: var(--text);
@@ -23,6 +24,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--bg);
+  font-size: 1.6rem;
+}
+
+.sBox {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
   font-size: 1.6rem;
 }
 
@@ -117,6 +126,8 @@ header h1 {
 =======
 >>>>>>> origin/main
 
+=======
+>>>>>>> origin/main
 /* Tablet */
 @media screen and (min-width: 768px) {
   .maingrid {
@@ -135,7 +146,6 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
 
   main {
     padding: 1rem 4rem;
@@ -474,4 +484,3 @@ fieldset {
   border-radius: 5px;
   box-shadow: 1px 1px 5px #8a8a8a;
 }
-
