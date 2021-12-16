@@ -99,38 +99,6 @@ header h1 {
   color: var(--bg);
 }
 
-header h1 {
-  margin: 0;
-  padding: 2rem 1rem;
-  color: var(--bg);
-} */
-
-.card {
-  background: linear-gradient(
-    to right bottom,
-    rgb(96, 96, 255, 0.6),
-    rgba(243, 66, 149, 0.664)
-  );
-  padding: 3rem;
-  /* border: 1px solid #b4eeb4; */
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #8a8a8a;
-}
-
- 
-
-/* 
->>>>>>> origin/main
-@media screen and (max-width: 500px) {
-    body{
-        color: blue;
-    }
-}
-=======
->>>>>>> origin/main
-
-=======
->>>>>>> origin/main
 /* Tablet */
 @media screen and (min-width: 768px) {
   .maingrid {
