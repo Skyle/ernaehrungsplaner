@@ -9,7 +9,9 @@
     <title>Document</title>
   </head>
   <body>
-    <header><a href="/"><h1>Ernährungsplaner</h1> </a></header>
+    <header>
+      <a href="/"><h1>Ernährungsplaner</h1> </a>
+    </header>
     <main class="profile-main">
       <section class="pro-img">
         <img
@@ -19,15 +21,11 @@
         <h4>User-name</h4>
       </section>
       <section class="form-part">
-        <form
-          action="https://formspree.io/f/xdobnwpy"
-          method="post"
-          class="testing-form1"
-        >
+        <form action="https://formspree.io/f/xdobnwpy" method="post">
           <fieldset action="labels">
             <legend>GESUNDHEITSDATEN</legend>
-            <label for="edit-profile" class="profile-label"
-              ><p>Profil Bearbeiten</p></label
+            <label for="edit-profile" class="profile-label">
+              <a href="konto.html"><p>Profil Bearbeiten</p></a></label
             >
             <br /><br />
             <hr id="profile-hr" />
@@ -46,45 +44,7 @@
             >
             <br /><br />
           </fieldset>
-          <fieldset class="fragen">
-            <legend>Fragen</legend>
-            <label for="krankheit" class="profile-label"></label>
-              <p>Leiden Sie unter besondere Krankheit?</p></label
-            >
-            <input
-              class="profile-input-txt"
-              type="text"
-              id="krankheit"
-              name="krankheit"
-              placeholder="Z.B Asthma"
-            />
-            <br />
-            <br />
-            <label for="allergie" class="profile-label">
-              <p>Wogegen Haben Sie Allergie?</p></label
-            >
-            <input
-              class="profile-input-txt"
-              type="text"
-              id="allergie"
-              name="allergie"
-              placeholder="Z.B Walnuss"
-            />
-            <br /><br />
-            <label for="essen" class="profile-label"
-              ><p>Was essen Sie nicht?</p></label
-            >
-            <input
-              class="profile-input-txt"
-              type="text"
-              id="essen"
-              name="essen"
-              placeholder="Z.B Fisch"
-            />
-            <br />
-            <br />
-            <button type="submit" class="profile-button">Submit</button>
-          </fieldset>
+
           <fieldset class="sonstige">
             <legend>Sonstige</legend>
             <label for="meine-activitaeten" class="profile-label"
@@ -92,7 +52,9 @@
             >
             <br /><br />
             <hr id="profile-hr" />
-            <label for="meine-preise" class="profile-label"><p>Meine Preise</p></label>
+            <label for="meine-preise" class="profile-label"
+              ><p>Meine Preise</p></label
+            >
             <br /><br />
             <hr id="profile-hr" />
             <label for="meine-erledigung" class="profile-label"
@@ -100,7 +62,9 @@
             >
             <br /><br />
             <hr id="profile-hr" />
-            <label for="einstellung" class="profile-label"><p>Einstellung</p></label>
+            <label for="einstellung" class="profile-label"
+              ><p>Einstellung</p></label
+            >
             <br /><br />
             <hr id="profile-hr" />
             <label for="newsletter" class="profile-label">
