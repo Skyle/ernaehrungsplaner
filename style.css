@@ -126,6 +126,10 @@ header h1 {
   background-color: var(--secondary);
 }
 
+.box2 {
+  visibility: hidden;
+}
+
 .footeritem {
   padding-top: 1rem;
 }
@@ -145,11 +149,19 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .pro-img {
     text-align: center;
   }
+
   .profile-main .profile-input-txt[type="text"] {
     width: 100%;
+  }
+
+  #mainContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -223,9 +235,7 @@ header h1 {
 Reset und Normalize
 */
 
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
 }
 
@@ -415,6 +425,7 @@ fieldset {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
 }
 
 #elemente {
