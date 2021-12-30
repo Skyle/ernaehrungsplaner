@@ -322,7 +322,14 @@ Reset und Normalize
   height: 35px;
   font-size: 1.5rem;
   color: #323232;
-  background: linear-gradient(to right bottom, #15803d, #01af1b);
+
+  border: rgb(32, 32, 32) solid 4px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(207, 197, 197),
+    #f0f0e4
+  );
+
   border: none;
   border-radius: 20px;
   transition: all 0.25s ease;
@@ -330,7 +337,13 @@ Reset und Normalize
 
 .btn:hover {
   color: #323232;
-  background: linear-gradient(to left top, #01af1b, #15803d);
+
+  background: linear-gradient(
+    to left top,
+    rgba(207, 197, 197),
+    #f0f0e4
+  );
+
   border-color: none;
 }
 
