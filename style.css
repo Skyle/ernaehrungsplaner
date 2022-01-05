@@ -324,11 +324,7 @@ Reset und Normalize
   color: #323232;
 
   border: rgb(32, 32, 32) solid 4px;
-  background: linear-gradient(
-    to right bottom,
-    rgba(207, 197, 197),
-    #f0f0e4
-  );
+  background: linear-gradient(to right bottom, rgba(207, 197, 197), #f0f0e4);
 
   border: none;
   border-radius: 20px;
@@ -338,11 +334,7 @@ Reset und Normalize
 .btn:hover {
   color: #323232;
 
-  background: linear-gradient(
-    to left top,
-    rgba(207, 197, 197),
-    #f0f0e4
-  );
+  background: linear-gradient(to left top, rgba(207, 197, 197), #f0f0e4);
 
   border-color: none;
 }
@@ -474,11 +466,55 @@ fieldset {
 .sBox,
 .mainitem,
 #rezepteNavbar a {
-  transition: all 300ms;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
   font-size: 1.6rem;
+}
+
+header {
+  position: relative;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  border: 1px solid black;
+  /* background-color: rgb(207, 197, 197); */
+  background-color: rgb(240, 240, 228);
+  width: 15%;
+
+  font-size: 2rem;
+  top: 3rem;
+  left: 2.5rem;
+
+  z-index: 5;
+}
+header {
+  position: relative;
+}
+.fas {
+  left: 2rem;
+  top: 2rem;
+  position: absolute;
+}
+
+.nav:hover .menu {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2rem 2rem;
+}
+
+.menu li {
+  padding: 1rem 1rem;
+}
+
+.menu li:hover {
+  background-color: rgb(207, 197, 197);
 }
 
 .untenBox {
