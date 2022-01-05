@@ -13,12 +13,14 @@
 }
 
 *:nth-child(odd) {
-  animation: wiggle 0.232s ease-in-out infinite 120s;
+  animation: wiggle 0.232s ease-in-out 2 12s, wiggle 0.232s ease-in-out 3 24s,
+    wiggleup 0.232s ease-in-out 2 32s, wiggle 0.232s ease-in-out infinite 40s;
   animation-direction: alternate;
 }
 
 *:nth-child(even) {
-  animation: wiggle 0.425s ease-in-out infinite 120s;
+  animation: wiggle 0.425s ease-in-out 2 12s, wiggle 0.232s ease-in-out 3 24s,
+    wiggleup 0.232s ease-in-out 2 32s, wiggle 0.232s ease-in-out infinite 40s;
   animation-direction: alternate;
 }
 
