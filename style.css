@@ -33,8 +33,7 @@ body {
   --primary: blue;
   --secondary: #15803d;
   --button: yellow;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
-    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 62.5%;
 }
 
@@ -313,12 +312,14 @@ Reset und Normalize
   height: 35px;
   font-size: 1.5rem;
   color: #323232;
+
   border: rgb(32, 32, 32) solid 4px;
   background: linear-gradient(
     to right bottom,
     rgba(207, 197, 197),
     #f0f0e4
   );
+
   border: none;
   border-radius: 20px;
   transition: all 0.25s ease;
@@ -326,11 +327,13 @@ Reset und Normalize
 
 .btn:hover {
   color: #323232;
+
   background: linear-gradient(
     to left top,
     rgba(207, 197, 197),
     #f0f0e4
   );
+
   border-color: none;
 }
 
@@ -456,6 +459,7 @@ fieldset {
   flex-wrap: wrap;
 }
 
+.supplements a,
 .sBox,
 .mainitem,
 #rezepteNavbar a {
@@ -531,22 +535,35 @@ fieldset {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.supplements a:hover {
+  /* background-color: cadetblue; */
+  background-color: rgba(207, 197, 197);
+  color: var(--text);
+}
+
 .supplements a {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  /* 
+  background-color: rgb(240, 240, 228); */
+  border: 3px solid #b4eeb4;
   padding: 0.7rem 1rem;
   margin-top: 3rem;
+  border-radius: 10px;
 }
 
 .card {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right bottom,
     rgb(96, 96, 255, 0.6),
-    rgba(243, 66, 149, 0.664)
-  );
+    rgba(243, 66, 149, 0.664) 
+     
+  );*/
+  background-color: #f0f0e4;
+  box-shadow: var(--shadow);
   padding: 3rem;
-  /* border: 1px solid #b4eeb4; */
+  border: 1px solid #b4eeb4;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px #8a8a8a;
+  /* box-shadow: 1px 1px 5px #8a8a8a; */
 }
 
 /* Müll */
