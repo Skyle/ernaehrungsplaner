@@ -1,11 +1,43 @@
 /* Reset und Imports */
 
+/*
+// SPERRZONE ANFANG
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  animation: spin 4s linear infinite 120s, scaler 2s linear infinite 120s;
+}
+
+*:nth-child(odd) {
+  animation: wiggle 0.232s ease-in-out infinite 120s;
+  animation-direction: alternate;
+}
+
+*:nth-child(even) {
+  animation: wiggle 0.425s ease-in-out infinite 120s;
+  animation-direction: alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-7px);
+  }
+}
+
+@keyframes wiggleup {
+  0% {
+    transform: translateY(-13px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
 }
 
 @keyframes spin {
@@ -18,6 +50,10 @@
     transform: scale(1.5, 2.4);
   }
 }
+
+/*
+// SPERRZONE ENDE
+*/
 
 a {
   text-decoration: none;
@@ -326,11 +362,7 @@ Reset und Normalize
   font-size: 1.2rem;
   color: #323232;
   border: rgb(75, 73, 177) solid 4px;
-  background: linear-gradient(
-    to right bottom,
-    #2d4263,
-    #f0f0e4
-  );
+  background: linear-gradient(to right bottom, #2d4263, #f0f0e4);
   border: none;
   border-radius: 20px;
 }
@@ -343,11 +375,7 @@ Reset und Normalize
   font-size: 1.2rem;
   color: #323232;
   border: rgb(177, 35, 30) solid 4px;
-  background: linear-gradient(
-    to right bottom,
-    #c84b31,
-    #f0f0e4
-  );
+  background: linear-gradient(to right bottom, #c84b31, #f0f0e4);
   border: none;
   border-radius: 20px;
 }
@@ -361,11 +389,7 @@ Reset und Normalize
   font-size: 1.2rem;
   color: #323232;
   border: rgb(222, 241, 45) solid 4px;
-  background: linear-gradient(
-    to right bottom,
-    #ecdbba,
-    #f0f0e4
-  );
+  background: linear-gradient(to right bottom, #ecdbba, #f0f0e4);
   border: none;
   border-radius: 20px;
 }
