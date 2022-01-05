@@ -304,7 +304,7 @@ Reset und Normalize
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(1330px, 0) rotate(1080deg);
+    transform: translate(88vw, 0) rotate(1080deg);
   }
 }
 
