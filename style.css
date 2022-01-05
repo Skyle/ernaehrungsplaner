@@ -1,11 +1,61 @@
 /* Reset und Imports */
 
+/*
+// SPERRZONE ANFANG
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+*:nth-child(odd) {
+  animation: wiggle 0.232s ease-in-out 2 12s, wiggle 0.232s ease-in-out 3 24s,
+    wiggleup 0.232s ease-in-out 2 32s, wiggle 0.232s ease-in-out infinite 40s;
+  animation-direction: alternate;
+}
+
+*:nth-child(even) {
+  animation: wiggle 0.425s ease-in-out 2 12s, wiggle 0.232s ease-in-out 3 24s,
+    wiggleup 0.232s ease-in-out 2 32s, wiggle 0.232s ease-in-out infinite 40s;
+  animation-direction: alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-7px);
+  }
+}
+
+@keyframes wiggleup {
+  0% {
+    transform: translateY(-13px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scaler {
+  100% {
+    transform: scale(1.5, 2.4);
+  }
+}
+
+/*
+// SPERRZONE ENDE
+*/
 
 a {
   text-decoration: none;
@@ -15,6 +65,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
@@ -126,6 +177,10 @@ header h1 {
   background-color: var(--secondary);
 }
 
+.box2 {
+  visibility: hidden;
+}
+
 .footeritem {
   padding-top: 1rem;
 }
@@ -145,11 +200,19 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .pro-img {
     text-align: center;
   }
+
   .profile-main .profile-input-txt[type="text"] {
     width: 100%;
+  }
+
+  #mainContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -213,23 +276,47 @@ header h1 {
 .rezeptBox img {
   grid-area: rezeptImage;
   border-radius: 5px;
+  transition: 2s;
 }
 .rezeptBox p {
   grid-area: rezeptText;
   line-height: 30px;
 }
 
+.rezeptBox img:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+
 /*
 Reset und Normalize
 */
 
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
 }
 
 /* Marc trainingsplan */
+
+.slider {
+  /* transition: all 2s; */
+  animation: slider 3s ease-in-out 2s infinite alternate-reverse;
+  overflow: hidden;
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(88vw, 0) rotate(1080deg);
+  }
+}
 
 .span-block {
   display: inline-block;
@@ -293,17 +380,45 @@ Reset und Normalize
 } */
 
 .sleep {
-  background-color: darkblue;
-  color: var(--bg);
+  /*  background-color: darkblue;
+  color: var(--bg); */
+  /* margin: 1rem auto; */
+  text-align: center;
+  width: 60px;
+  height: 15px;
+  font-size: 1.2rem;
+  color: #323232;
+  border: rgb(75, 73, 177) solid 4px;
+  background: linear-gradient(to right bottom, #2d4263, #f0f0e4);
+  border: none;
+  border-radius: 20px;
 }
 
 .exercise {
-  background-color: red;
+  /* background-color: red; */
+  text-align: center;
+  width: 60px;
+  height: 15px;
+  font-size: 1.2rem;
+  color: #323232;
+  border: rgb(177, 35, 30) solid 4px;
+  background: linear-gradient(to right bottom, #c84b31, #f0f0e4);
+  border: none;
+  border-radius: 20px;
 }
 
 .eating {
-  background-color: darkmagenta;
-  color: var(--bg);
+  /* background-color: darkmagenta;
+  color: var(--bg); */
+  text-align: center;
+  width: 60px;
+  height: 15px;
+  font-size: 1.2rem;
+  color: #323232;
+  border: rgb(222, 241, 45) solid 4px;
+  background: linear-gradient(to right bottom, #ecdbba, #f0f0e4);
+  border: none;
+  border-radius: 20px;
 }
 
 .btn {
@@ -464,6 +579,7 @@ fieldset {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
 }
 
 #elemente {
@@ -499,12 +615,56 @@ fieldset {
 .sBox,
 .mainitem,
 #rezepteNavbar a {
-  transition: all 300ms;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
   font-size: 1.6rem;
   perspective: 1000px;
+}
+
+header {
+  position: relative;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  border: 1px solid black;
+  /* background-color: rgb(207, 197, 197); */
+  background-color: rgb(240, 240, 228);
+  width: 15%;
+
+  font-size: 2rem;
+  top: 3rem;
+  left: 2.5rem;
+
+  z-index: 5;
+}
+header {
+  position: relative;
+}
+.fas {
+  left: 2rem;
+  top: 2rem;
+  position: absolute;
+}
+
+.nav:hover .menu {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2rem 2rem;
+}
+
+.menu li {
+  padding: 1rem 1rem;
+}
+
+.menu li:hover {
+  background-color: rgb(207, 197, 197);
 }
 
 .untenBox {
