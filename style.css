@@ -291,6 +291,21 @@ Reset und Normalize
 
 /* Marc trainingsplan */
 
+.slider {
+  /* transition: all 2s; */
+  animation: slider 3s ease-in-out 2s infinite alternate-reverse;
+  overflow: hidden;
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(1330px, 0) rotate(1080deg);
+  }
+}
+
 .span-block {
   display: inline-block;
 }
