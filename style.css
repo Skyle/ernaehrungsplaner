@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-*:nth-child(odd) {
+/* *:nth-child(odd) {
   animation: wiggle 0.232s ease-in-out 2 12s, wiggle 0.232s ease-in-out 3 24s,
     wiggleup 0.232s ease-in-out 2 32s, wiggle 0.232s ease-in-out infinite 40s;
   animation-direction: alternate;
@@ -51,7 +51,7 @@
   100% {
     transform: scale(1.5, 2.4);
   }
-}
+} */
 
 /*
 // SPERRZONE ENDE
@@ -291,6 +291,11 @@ header h1 {
   height: auto;
   display: block;
   z-index: 999;
+}
+
+#rezepteTitle {
+  text-align: center;
+  margin: 1.5rem 0;
 }
 
 /*
@@ -636,8 +641,8 @@ header {
   width: 15%;
 
   font-size: 2rem;
-  top: 3rem;
-  left: 2.5rem;
+  top: 2.5rem;
+  left: 2rem;
 
   z-index: 5;
 }
@@ -680,12 +685,18 @@ ul {
   border-radius: 10px;
   width: 100%;
   background-color: rgb(240, 240, 228);
+  box-shadow: 6px 2px 11px 11px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 6px 2px 11px 11px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 6px 2px 11px 11px rgba(0, 0, 0, 0.57);
 }
 
 .sBox:hover,
 .mainitem:hover {
   background-color: rgba(207, 197, 197);
   color: var(--text);
+  box-shadow: -2px 3px 15px 15px rgba(0, 0, 0, 0.52) inset;
+  -webkit-box-shadow: -2px 3px 15px 15px rgba(0, 0, 0, 0.52) inset;
+  -moz-box-shadow: -2px 3px 15px 15px rgba(0, 0, 0, 0.52) inset;
 }
 
 .sBox h3 {
