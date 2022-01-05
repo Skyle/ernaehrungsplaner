@@ -5,6 +5,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  animation: spin 4s linear infinite 120s, scaler 2s linear infinite 120s;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scaler {
+  100% {
+    transform: scale(1.5, 2.4);
+  }
 }
 
 a {
@@ -15,6 +27,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
@@ -314,11 +327,7 @@ Reset und Normalize
   color: #323232;
 
   border: rgb(32, 32, 32) solid 4px;
-  background: linear-gradient(
-    to right bottom,
-    rgba(207, 197, 197),
-    #f0f0e4
-  );
+  background: linear-gradient(to right bottom, rgba(207, 197, 197), #f0f0e4);
 
   border: none;
   border-radius: 20px;
@@ -328,11 +337,7 @@ Reset und Normalize
 .btn:hover {
   color: #323232;
 
-  background: linear-gradient(
-    to left top,
-    rgba(207, 197, 197),
-    #f0f0e4
-  );
+  background: linear-gradient(to left top, rgba(207, 197, 197), #f0f0e4);
 
   border-color: none;
 }
