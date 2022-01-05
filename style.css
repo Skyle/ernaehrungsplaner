@@ -314,11 +314,7 @@ Reset und Normalize
   color: #323232;
 
   border: rgb(32, 32, 32) solid 4px;
-  background: linear-gradient(
-    to right bottom,
-    rgba(207, 197, 197),
-    #f0f0e4
-  );
+  background: linear-gradient(to right bottom, rgba(207, 197, 197), #f0f0e4);
 
   border: none;
   border-radius: 20px;
@@ -328,11 +324,7 @@ Reset und Normalize
 .btn:hover {
   color: #323232;
 
-  background: linear-gradient(
-    to left top,
-    rgba(207, 197, 197),
-    #f0f0e4
-  );
+  background: linear-gradient(to left top, rgba(207, 197, 197), #f0f0e4);
 
   border-color: none;
 }
@@ -374,6 +366,50 @@ fieldset {
 }
 .first-name:focus {
   box-shadow: 0px 0px 7px 0px #025d02;
+}
+
+/*Animation baby!*/
+.flip-card-omar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: right center;
+}
+.flip-card-omar:hover {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+.flip-card-omar .face-omar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  backface-visibility: hidden;
+}
+.flip-card-omar .front-omar {
+  background-color: none;
+  backface-visibility: hidden;
+}
+.flip-card-omar img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: contain;
+}
+.main-item-container .back-omar {
+  /* background-color: green; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 /********************************************************/
@@ -468,6 +504,7 @@ fieldset {
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   font-size: 1.6rem;
+  perspective: 1000px;
 }
 
 .untenBox {
@@ -543,7 +580,7 @@ fieldset {
 
 .supplements a {
   /* background-color: cadetblue; */
-  /* 
+  /*
   background-color: rgb(240, 240, 228); */
   border: 3px solid #b4eeb4;
   padding: 0.7rem 1rem;
@@ -555,8 +592,8 @@ fieldset {
   /* background: linear-gradient(
     to right bottom,
     rgb(96, 96, 255, 0.6),
-    rgba(243, 66, 149, 0.664) 
-     
+    rgba(243, 66, 149, 0.664)
+
   );*/
   background-color: #f0f0e4;
   box-shadow: var(--shadow);
