@@ -467,6 +467,8 @@ fieldset {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
+  background-color: rgb(207, 197, 197);
+  font-size: 2rem;
 }
 
 .profile-input-txt[type="text"] {
