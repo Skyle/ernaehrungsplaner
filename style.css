@@ -745,13 +745,18 @@ ul {
 }
 
 .cardsBoxEx:hover {
-  clip-path: circle(100%);
+  clip-path: circle(70%);
+}
+
+.sBoxEx:hover img {
+  display: none;
 }
 
 .cardsBoxEx span {
   float: right;
   margin-right: 2.2rem;
   margin-top: -9px;
+  font-weight: bold;
 }
 
 .lead {
