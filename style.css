@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-*:nth-child(odd) {
+/* *:nth-child(odd) {
   animation: wiggle 0.232s ease-in-out 2 12s, wiggle 0.232s ease-in-out 3 24s,
     wiggleup 0.232s ease-in-out 2 32s, wiggle 0.232s ease-in-out infinite 40s;
   animation-direction: alternate;
@@ -51,7 +51,7 @@
   100% {
     transform: scale(1.5, 2.4);
   }
-}
+} */
 
 /*
 // SPERRZONE ENDE
@@ -293,6 +293,11 @@ header h1 {
   z-index: 999;
 }
 
+#rezepteTitle {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
 /*
 Reset und Normalize
 */
@@ -462,6 +467,8 @@ fieldset {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
+  background-color: rgb(207, 197, 197);
+  font-size: 2rem;
 }
 
 .profile-input-txt[type="text"] {
@@ -636,8 +643,8 @@ header {
   width: 15%;
 
   font-size: 2rem;
-  top: 3rem;
-  left: 2.5rem;
+  top: 2.5rem;
+  left: 2rem;
 
   z-index: 5;
 }
@@ -680,12 +687,18 @@ ul {
   border-radius: 10px;
   width: 100%;
   background-color: rgb(240, 240, 228);
+  box-shadow: 6px 2px 11px 11px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 6px 2px 11px 11px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 6px 2px 11px 11px rgba(0, 0, 0, 0.57);
 }
 
 .sBox:hover,
 .mainitem:hover {
   background-color: rgba(207, 197, 197);
   color: var(--text);
+  box-shadow: -2px 3px 15px 15px rgba(0, 0, 0, 0.52) inset;
+  -webkit-box-shadow: -2px 3px 15px 15px rgba(0, 0, 0, 0.52) inset;
+  -moz-box-shadow: -2px 3px 15px 15px rgba(0, 0, 0, 0.52) inset;
 }
 
 .sBox h3 {
@@ -705,6 +718,7 @@ ul {
 }
 
 .sBoxEx {
+  position: relative;
   margin: 0 auto;
   margin-top: 5em;
   width: 75%;
@@ -714,8 +728,37 @@ ul {
   padding: 1rem 2rem;
   width: 90%;
   margin: 2rem auto;
-
   letter-spacing: 0.09rem;
+}
+
+.cardsBoxEx {
+  top: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  color: black;
+  font-size: 2rem;
+  background-color: rgba(207, 197, 197);
+  clip-path: circle(20px at 94% 20px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cardsBoxEx:hover {
+  clip-path: circle(70%);
+}
+
+.sBoxEx:hover img {
+  display: none;
+}
+
+.cardsBoxEx span {
+  float: right;
+  margin-right: 2.2rem;
+  margin-top: -9px;
+  font-weight: bold;
 }
 
 .lead {
