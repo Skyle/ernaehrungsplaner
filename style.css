@@ -771,3 +771,13 @@ ul {
   margin: auto;
   text-align: center;
 }
+
+header {
+ animation: slide 2s forwards; 
+}
+ header h1:hover{
+   text-shadow: 0 0 12px lime ;
+   transform: translate(600px, 50%);
+   transition: 3s;
+   color: gold;
+ }
