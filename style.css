@@ -716,6 +716,7 @@ ul {
 }
 
 .sBoxEx {
+  position: relative;
   margin: 0 auto;
   margin-top: 5em;
   width: 75%;
@@ -725,8 +726,32 @@ ul {
   padding: 1rem 2rem;
   width: 90%;
   margin: 2rem auto;
-
   letter-spacing: 0.09rem;
+}
+
+.cardsBoxEx {
+  top: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  color: black;
+  font-size: 2rem;
+  background-color: rgba(207, 197, 197);
+  clip-path: circle(20px at 94% 20px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cardsBoxEx:hover {
+  clip-path: circle(100%);
+}
+
+.cardsBoxEx span {
+  float: right;
+  margin-right: 2.2rem;
+  margin-top: -9px;
 }
 
 .lead {
