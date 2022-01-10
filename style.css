@@ -189,29 +189,17 @@ header h1 {
 
 @media screen and (min-width: 576px) {
   header {
+    width: 100vw;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-
-  .menü {
-    border: 1px solid black;
-
-    background-color: rgb(240, 240, 228);
-    width: 20vw;
-
-    font-size: 2rem;
-  }
-
-  .prefix {
-    margin-top: 4rem;
-    align-self: center;
   }
 
   .postfix {
-    width: 100%;
-    align-self: center;
+    margin-left: 7rem;
   }
 }
 /* Tablet */
@@ -820,10 +808,6 @@ ul {
   /* box-shadow: 1px 1px 5px #8a8a8a; */
 }
 
-.prefix {
-  margin-right: 2rem;
-}
-
 .title {
   margin-right: 2rem;
   color: #025d02;
@@ -834,10 +818,12 @@ ul {
 
 header {
   width: 100vw;
-  height: 15rem;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 header span:nth-child(1) {
