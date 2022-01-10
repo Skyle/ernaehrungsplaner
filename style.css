@@ -155,10 +155,16 @@ main {
 /* Header */
 
 header {
-  text-align: center;
   background-color: var(--bg);
   box-shadow: var(--shadow);
   position: relative;
+  width: 100vw;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -313,14 +319,6 @@ header h1 {
 #rezepteTitle {
   text-align: center;
   margin: 1.5rem 0;
-}
-
-/*
-Reset und Normalize
-*/
-
-* {
-  box-sizing: border-box;
 }
 
 /* Marc trainingsplan */
@@ -814,16 +812,6 @@ ul {
   font-size: 3rem;
   font-weight: bolder;
   animation: text 5s linear infinite;
-}
-
-header {
-  width: 100vw;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 header span:nth-child(1) {
