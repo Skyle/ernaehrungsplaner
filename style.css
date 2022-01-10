@@ -185,24 +185,21 @@ header h1 {
   padding-top: 1rem;
 }
 
-/* @media screen and (min-width: 576px) {
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .media_grid_marc1 {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .main-item-container {
-    width: 100%;
-  }
-
-  .imgcontainer img {
-    width: 100%;
-  }
-} */
+@media screen and (min-width: 576px) {
+  header{
+    height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.prefix {
+  margin-top: 4rem;
+ 
+  align-self: center;
+}
+.postfix {
+  width: 70%;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) {
