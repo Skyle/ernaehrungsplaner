@@ -155,16 +155,15 @@ main {
 /* Header */
 
 header {
-  text-align: center;
   background-color: var(--bg);
   box-shadow: var(--shadow);
-  position: relative;
-}
-
-header h1 {
-  margin: 0;
-  padding: 2rem 1rem;
-  color: var(--secondary);
+  width: 100vw;
+  height: 10vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; */
 }
 
 /* Footer */
@@ -189,29 +188,31 @@ header h1 {
 
 @media screen and (min-width: 576px) {
   header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "prefix"
+      "postfix";
   }
 
-  .menü {
-    border: 1px solid black;
-
-    background-color: rgb(240, 240, 228);
-    width: 20vw;
-
-    font-size: 2rem;
+  .nav {
+    grid-area: nav;
+  }
+  .menu {
+    width: 30vw !important;
   }
 
   .prefix {
-    margin-top: 4rem;
-    align-self: center;
+    grid-area: prefix;
+    text-align: center;
   }
 
   .postfix {
-    width: 100%;
-    align-self: center;
+    grid-area: postfix;
+    text-align: center;
   }
 }
 /* Tablet */
@@ -219,6 +220,10 @@ header h1 {
   .maingrid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu {
+    width: 30vw !important;
   }
 
   main {
@@ -250,6 +255,9 @@ header h1 {
   .maingrid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .menu {
+    width: 20vw !important;
   }
 
   main {
@@ -325,14 +333,6 @@ header h1 {
 #rezepteTitle {
   text-align: center;
   margin: 1.5rem 0;
-}
-
-/*
-Reset und Normalize
-*/
-
-* {
-  box-sizing: border-box;
 }
 
 /* Marc trainingsplan */
@@ -664,7 +664,8 @@ fieldset {
   position: absolute;
   border: 1px solid black;
   background-color: rgb(240, 240, 228);
-  width: 20%;
+
+  width: 10vw;
   font-size: 2rem;
   top: 2.5rem;
   left: 2rem;
@@ -820,24 +821,12 @@ ul {
   /* box-shadow: 1px 1px 5px #8a8a8a; */
 }
 
-.prefix {
-  margin-right: 2rem;
-}
-
 .title {
   margin-right: 2rem;
   color: #025d02;
   font-size: 3rem;
   font-weight: bolder;
   animation: text 5s linear infinite;
-}
-
-header {
-  width: 100vw;
-  height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header span:nth-child(1) {
